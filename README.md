@@ -1,1 +1,1 @@
-# rmit-hack-a-venture-2024
+# RMIT Hack-A-Venture 2024

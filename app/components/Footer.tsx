@@ -9,9 +9,9 @@ export const Footer = () => {
   return (
     <footer className="py-[50px] px-[20px] border-t-[1px] border-solid border-[#1F2937] flex flex-col gap-[80px] lg:items-center">
       <section className="w-full flex flex-col gap-[50px] lg:flex-row lg:justify-around">
-      <SocialMediaList />
-      <OrganizerList />
-      <ContactList />
+        <SocialMediaList />
+        <OrganizerList />
+        <ContactList />
       </section>
       <div className="text-[#9da3af]">© Hack-a-thon 2024, All Rights Reserved</div>
     </footer>

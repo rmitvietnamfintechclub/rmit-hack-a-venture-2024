@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "fa": "^1.0.1",
     "hack_a_venture": "file:",
     "next": "^14.2.13",
     "react": "^18",

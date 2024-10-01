@@ -69,7 +69,7 @@ const LaptopNav = () => {
         </a>
         <a href="" className="no-underline font-semibold  text-[#C93FDD]">Contact Us</a>
         <button className="px-[15px] py-[5px] rounded-2xl bg-[#B25FD6] text-white">
-          Join Now 
+          Join Now
         </button>
       </div>
     </nav>
@@ -97,18 +97,16 @@ const MobileNav = () => {
         >
           <div className="w-full h-[3px] bg-white" />
           <div
-            className={`${
-              hamburgerBarIsActive && "hidden"
-            } w-full h-[3px] bg-white`}
+            className={`${hamburgerBarIsActive && "hidden"
+              } w-full h-[3px] bg-white`}
           />
           <div className="w-full h-[3px] bg-white" />
         </div>
       </nav>
       {/*----------------------- navbar body ---------------*/}
       <section
-        className={`absolute top-[72px] w-full h-screen mx-auto ${
-          hamburgerBarIsActive ? "left-0" : "left-full hidden"
-        } top-[75px] bg-black z-50 duration-500 text-[25px]`}
+        className={`absolute top-[72px] w-full h-screen mx-auto ${hamburgerBarIsActive ? "left-0" : "left-full hidden"
+          } top-[75px] bg-black z-50 duration-500 text-[25px]`}
       >
         <div className=" my-[30px] mx-auto w-[90%] flex flex-col gap-[50px]">
           <a
@@ -153,7 +151,7 @@ const MobileNav = () => {
             Contact Us
           </a>
           <button className="px-[15px] py-[2px] rounded-2xl bg-[#B25FD6] text-white">
-            Join Now 
+            Join Now
           </button>
         </div>
       </section>

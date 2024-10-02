@@ -85,7 +85,7 @@ const OrganizerList = () => {
             src="/alignVerticalLogo.svg"
             alt="fintech logo"
           />
-          <h2 className="text-[18px]">RMIT Vietnam Fintech Club</h2>
+          <h2 className="text-[18px] text-white">RMIT Vietnam Fintech Club</h2>
         </div>
 
         <div className="flex gap-[15px] items-center">
@@ -94,7 +94,7 @@ const OrganizerList = () => {
             src="/alignVerticalLogo.svg"
             alt="fintech logo"
           />
-          <h2 className="text-[18px]">chainLink</h2>
+          <h2 className="text-[18px] text-white">chainLink</h2>
         </div>
       </div>
     </div>
@@ -123,27 +123,27 @@ const ContactList = () => {
           <BiSolidPhoneCall className="text-[24px] mt-[5px] lg:m-0" />
           <div className="text-[16px]">
             <div>
-              <span> Nguyen Manh Dung </span>
+              <span className="text-white"> Nguyen Manh Dung </span>
               <span className="text-[#9da3af] hidden lg:inline"> - </span>
               <span className="text-[#9da3af] block lg:inline">Co-project leader</span>
             </div>
-            <p>03535343434</p>
+            <p className="text-white">03535343434</p>
           </div>
         </div>
         <div className="flex gap-[15px] items-start lg:items-center">
           <BiSolidPhoneCall className="text-[24px] mt-[5px] lg:m-0" />
           <div className="text-[16px]">
             <div>
-              <span>Hoang Nguyen Nhat Minh</span>
+              <span className="text-white">Hoang Nguyen Nhat Minh</span>
               <span className="text-[#9da3af] hidden lg:inline"> - </span>
               <span className="text-[#9da3af] block lg:inline">Co-project leader</span>
             </div>
-            <p>03535343434</p>
+            <p className="text-white">03535343434</p>
           </div>
         </div>
         <div className="flex gap-[15px] items-center">
           <MdEmail className="text-[24px]" />
-          <p className="text-[16px]">rmitfintech123@gmail.com</p>
+          <p className="text-[16px] text-white">rmitfintech123@gmail.com</p>
         </div>
       </div>
     </div>

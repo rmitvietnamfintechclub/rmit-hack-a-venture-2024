@@ -16,7 +16,7 @@ const LaptopNav = () => {
   return (
     <nav
       id="header"
-      className="sticky top-0 w-full h-[72px] backdrop-blur-sm bg-black/30 border-b-[1px] border-solid border-[#374051] text-[14px] hidden lg:flex justify-between items-center gap-[100px]"
+      className="sticky z-50 top-0 w-full h-[72px] backdrop-blur-sm bg-black/30 border-b-[1px] border-solid border-[#374051] text-[14px] hidden lg:flex justify-between items-center gap-[100px]"
     >
       {/*-----------------------------left side ------------------------*/}
       <div className=" lg:ms-[70px] h-[100%] w-[650px] flex justify-between items-end items-center">

@@ -1,4 +1,4 @@
-// File: /Users/tonyuser/Tony/rmit/ftc/ftc-hack-a-venture/app/layout.tsx
+// File: /Users/Admin/Desktop/GitHub Repositories/rmit-hack-a-venture-2024/app/layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -551,9 +551,6 @@ video {
 .flex {
   display: flex;
 }
-.grid {
-  display: grid;
-}
 .hidden {
   display: none;
 }
@@ -629,9 +626,6 @@ video {
 .cursor-pointer {
   cursor: pointer;
 }
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
 .flex-row {
   flex-direction: row;
 }
@@ -656,9 +650,6 @@ video {
 .justify-around {
   justify-content: space-around;
 }
-.gap-6 {
-  gap: 1.5rem;
-}
 .gap-\[100px\] {
   gap: 100px;
 }
@@ -679,9 +670,6 @@ video {
 }
 .rounded-full {
   border-radius: 9999px;
-}
-.rounded-xl {
-  border-radius: 0.75rem;
 }
 .border-b-\[1px\] {
   border-bottom-width: 1px;
@@ -714,6 +702,9 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.p-3 {
+  padding: 0.75rem;
 }
 .p-8 {
   padding: 2rem;
@@ -814,35 +805,37 @@ video {
 }
 
 :root {
-  --background: #000000;
-  --foreground: #000000;
+	--background: #000000;
+	--foreground: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #000000;
-    --foreground: #ededed;
-  }
+	:root {
+		--background: #000000;
+		--foreground: #ededed;
+	}
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+	color: var(--foreground);
+	background: var(--background);
+	font-family: Arial, Helvetica, sans-serif;
 }
 
+.slick-slide {
+	transition: transform 0.3s ease-in-out; /* Add smooth transition */
+	opacity: 0.6; /* Make non-centered slides less opaque */
+}
+
+/* Zoom the center slide */
+.slick-center a img {
+	transform: scale(1.1);
+	opacity: 1;
+}
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-
-@media (min-width: 768px) {
-
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-
 @media (min-width: 1024px) {
 
   .lg\:m-0 {

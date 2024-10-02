@@ -1,14 +1,25 @@
 "use client"
 import React from "react";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-export const AboutClub = () => {
+export const AboutClub = (e) => {
+  // const onClickSlide = () => {
+  //   e
+  //  }
   const settings = {
+    slidesToShow: 4,
+    // slidesToScroll: 1,
+    centerMode: true,
     focusOnSelect: true,
     infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    speed: 500
+    centerPadding: 0,
+    speed: 500,
+    dots: false,
+    arrows: true,
+    // autoplay: true,
+    autoplaySpeed: 1500,
   };
   return (
     <div className='bg-black text-white p-8' >
@@ -26,35 +37,40 @@ export const AboutClub = () => {
       </div >
 
       {/* Image Section */}
-      {/* <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
-        <img
-          src='path_to_image1' // Replace with the image path
-          alt='FinTech Wonderland'
-          className='rounded-xl'
-        />
-        <img
-          src='path_to_image2' // Replace with the image path
-          alt='FinTech Event 2023'
-          className='rounded-xl'
-        />
-        <img
-          src='path_to_image3' // Replace with the image path
-          alt='FinTech Club Event'
-          className='rounded-xl'
-        />
-      </div> */}
-      <Slider {...settings}>
-        <div>
-          <h3>1</h3>
-        </div>
-        <div>
-          <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-      </Slider>
-
+      <div className="slider-container">
+        <Slider {...settings} className="center">
+          <div className="p-3">
+            <p>1</p>
+            <a className="no-underline block" href="#">
+              <img
+                className=""
+                src="/about_ftc_1.jpeg"
+                alt="About FinTech Club 1"
+              />
+            </a>
+          </div>
+          <div className="p-3">
+            <p>2</p>
+            <a className="no-underline block" href="#">
+              <img
+                className=""
+                src="/about_ftc_1.jpeg"
+                alt="About FinTech Club 1"
+              />
+            </a>
+          </div>
+          <div className="p-3">
+            <p>3</p>
+            <a className="no-underline block" href="#">
+              <img
+                className=""
+                src="/about_ftc_1.jpeg"
+                alt="About FinTech Club 1"
+              />
+            </a>
+          </div>
+        </Slider>
+      </div>
     </div >
   )
 }

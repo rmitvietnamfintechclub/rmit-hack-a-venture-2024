@@ -5,7 +5,7 @@ export const WorkshopTimeline = () => {
 	return (
 		<section className="w-full flex flex-col items-center">
 			<h1
-				className={`text-[45px] lg:text-[57px] text-center text-white font-semibold px-[40px]`}
+				className={`text-[45px] lg:text-[57px] text-center text-white font-semibold px-[40px] max-md:mt-[48px]`}
 				style={{
 					textShadow: "1px 3px 15px rgba(201, 63, 221, 1)",
 				}}

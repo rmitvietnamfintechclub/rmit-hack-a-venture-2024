@@ -2,13 +2,10 @@ import React from 'react'
 
 export const AboutUsSection = () => {
 	return (
-		<div className='items-center justify-center mx-auto w-fit max-md:mx-[16px] max-md:mt-[40px] font-sans font-medium text-md'>
+		<div className='items-center justify-center mx-auto w-fit max-md:mx-[16px] max-md:mt-[40px] font-sans font-medium text-md md:px-[450px] '>
 			<div>
-				<p>
-					This competition aims to bridge the gap between technical expertise and business strategy by
-				</p>
-				<p> encouraging students to leverage cutting-edge technologies, such as <span className='text-[#C93FDD]'> Artificial Intelligence</span>,</p>
-				<p> <span className='text-[#C93FDD]'>Blockchain</span> and <span className='text-[#C93FDD]'>Cybersecurity</span>, to create scalable and impactful solutions.</p>
+				This competition aims to bridge the gap between technical expertise and business strategy by encouraging students to leverage cutting-edge technologies, such as <span className='text-[#C93FDD]'> Artificial Intelligence</span>,
+				<span className='text-[#C93FDD]'> Blockchain</span> and <span className='text-[#C93FDD]'>Cybersecurity</span>, to create scalable and impactful solutions.
 			</div>
 
 			<div className='my-[16px] '>

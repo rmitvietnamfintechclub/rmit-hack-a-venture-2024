@@ -51,7 +51,7 @@ export const AboutClub = () => {
               />
             </a>
           </div>
-          <div className="p-3 md:py-6 md:p-0">
+          <div className="p-3 md:py-5 md:p-0">
             <a className="no-underline block" href="#">
               <img
                 className="rounded-lg"

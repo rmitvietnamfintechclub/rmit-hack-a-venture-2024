@@ -1,0 +1,28 @@
+.text-gradient {
+    font-weight: bold;
+    background: linear-gradient(200deg,
+            #DEB7F0 0%,
+            #F5EBFC 17%,
+            #DEB7F0 47%,
+            #CA8CE6 82%,
+            #F5EBFC 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.drop-shadow-lg {
+    filter: drop-shadow(0 0px 20px rgba(201, 63, 221, 0.5)) drop-shadow(0 0px 20px rgba(178, 95, 214, 0.5));
+}
+
+.bg-gradient {
+    background: linear-gradient(200deg,
+            #DEB7F0 0%,
+            #F5EBFC 17%,
+            #DEB7F0 47%,
+            #CA8CE6 82%,
+            #F5EBFC 100%);
+}
+
+.bg-position {
+    background-position: right 10px top 10px;
+}

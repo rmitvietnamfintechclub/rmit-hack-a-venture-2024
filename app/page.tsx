@@ -16,8 +16,8 @@ export default function Home() {
 		<>
 			<Header />
 			<HeroSection />
-			<AboutUsSection />
-			<AboutClub />
+			{/* <AboutUsSection />
+			<AboutClub /> */}
 			<WhoSection />
 			<ThemeSection />
 			<RoundTimeline />

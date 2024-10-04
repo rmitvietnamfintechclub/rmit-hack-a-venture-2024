@@ -6,18 +6,11 @@ import '../css/HeroSection.css'
 export const HeroSection = () => {
 	return (
 		<>
-			<div className="max-md:hidden grid grid-cols-2 bg-[right_10px_top_10px] items-center"
-				style={{
-					backgroundImage: `url(${'cubes.png'})`,
-					backgroundRepeat: 'no-repeat',
-				}}
-			>
-				<div className='md:grid md:grid-cols-2 justify-center mx-auto mt-[88px] mb-[60px] w-screen'>
-					<div
-						className="mx-auto ml-[180px]"
-					>
-						<div className='mb-[16px] drop-shadow-lg'>
-							<h1 className='text-white text-6xl font-bold shadow-lg'>
+			<div className="max-md:hidden grid grid-cols-2 items-center md:px-[250px]">
+				<div className='justify-center mx-auto md:w-full'>
+					<div className="mx-auto">
+						<div className='mb-[16px]'>
+							<h1 className='text-white text-6xl font-bold drop-shadow-lg'>
 								RMIT 2024
 							</h1>
 							<h1 className='text-gradient text-6xl font-bold'>
@@ -48,6 +41,15 @@ export const HeroSection = () => {
 							</button>
 						</div>
 					</div>
+				</div>
+				<div
+					className='items-center mx-auto w-full bg-center md:pt-[100px] md:pb-[100px]'
+					style={{
+						backgroundImage: `url(${'cubes.png'})`,
+						backgroundRepeat: 'no-repeat',
+						// backgroundPosition: 'right 0px bottom 0px'
+					}}
+				>
 					<Image
 						src={'/mascot.png'}
 						alt='hero'
@@ -59,16 +61,16 @@ export const HeroSection = () => {
 			</div>
 
 			<div className='md:hidden'>
-				<div className='mb-[16px] drop-shadow-lg shadow-lg justify-center mx-auto text-center'>
-					<h1 className='text-gradient text-5xl font-bold shadow-lg mt-[40px]'>
+				<div className='mb-[16px] justify-center mx-auto text-center'>
+					<h1 className='text-5xl drop-shadow-lg shadow-lg font-sans font-bold mt-[40px]'>
 						RMIT 2024
 					</h1>
-					<h1 className='text-gradient text-5xl font-bold'>
+					<h1 className='text-gradient text-5xl font-sans font-bold'>
 						Hack-A-Venture
 					</h1>
 				</div>
 
-				<div className='text-[#9CA3AF] my-[16px] text-center mx-[16px] mt-[24px]'>
+				<div className='text-[#9CA3AF] my-[16px] font-sans font-normal text-center mx-[16px] mt-[24px]'>
 					Organized by the RMIT FinTech Club, it’s a unique hackathon-style competition that brings together <span className='font-bold text-white'>Business</span> and <span className='font-bold text-white'>Technology</span> students to collaborate and develop innovative solutions for Vietnam's pressing social challenges.
 				</div>
 

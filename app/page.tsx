@@ -5,6 +5,7 @@ import { Header } from "./components/Header";
 import { HeroSection } from "./components/HeroSection";
 import { JudgeSection } from "./components/JudgeSection";
 import { MentorSection } from "./components/MentorSection";
+import { PartnerSection } from "./components/PartnerSection";
 import { PrizeSection } from "./components/PrizeSection";
 import { RoundTimeline } from "./components/RoundTimeline";
 import { ThemeSection } from "./components/ThemeSection";
@@ -18,6 +19,7 @@ export default function Home() {
 			<HeroSection />
 			<AboutUsSection />
 			<AboutClub />
+			<PartnerSection />
 			<WhoSection />
 			<ThemeSection />
 			<RoundTimeline />

@@ -1,7 +1,7 @@
 import { AboutClub } from "./components/AboutClub";
 import { AboutUsSection } from "./components/AboutUsSection";
 import { Footer } from "./components/Footer";
-import { Header } from "./components/Header";
+import { Header } from "./components/header";
 import { HeroSection } from "./components/HeroSection";
 import { JudgeSection } from "./components/JudgeSection";
 import { MentorSection } from "./components/MentorSection";
@@ -17,9 +17,9 @@ export default function Home() {
 			<Header />
 			<HeroSection />
 			<AboutUsSection />
-			{/* <AboutClub />
+			<AboutClub />
 			<WhoSection />
-			<ThemeSection /> */}
+			<ThemeSection />
 			<RoundTimeline />
 			{/* <WorkshopTimeline />
 			<PrizeSection />

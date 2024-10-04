@@ -17,14 +17,14 @@ export default function Home() {
 			<Header />
 			<HeroSection />
 			<AboutUsSection />
-			{/* <AboutClub />
+			<AboutClub />
 			<WhoSection />
-			<ThemeSection /> */}
+			<ThemeSection />
 			<RoundTimeline />
-			{/* <WorkshopTimeline />
+			<WorkshopTimeline />
 			<PrizeSection />
 			<JudgeSection />
-			<MentorSection /> */}
+			<MentorSection />
 			<Footer />
 		</>
 	);

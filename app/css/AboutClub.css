@@ -1,0 +1,46 @@
+.text-gradient {
+	font-weight: bold;
+	background: linear-gradient(
+		200deg,
+		#ffffff 2%,
+		#deb7f0 20%,
+		#ffffff 63%,
+		#deb7f0 100%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.text-clip {
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.drop-shadow-text {
+	filter: drop-shadow(0 0px 20px rgba(201, 63, 221, 0.5))
+		drop-shadow(0 0px 20px rgba(178, 95, 214, 0.5));
+}
+
+.slick-dots li button {
+	width: 6px;
+	height: 6px;
+}
+
+/* Change dot colors */
+.slick-dots li button:before {
+	color: #9ca3af;
+}
+
+/* Change dot color when active */
+.slick-dots li.slick-active button:before {
+	color: #c93fdd;
+}
+
+.slick-slide div img {
+    opacity: 1; /* Ensure full opacity */
+    filter: none; /* Remove any filters affecting brightness */
+}
+
+.slick-slider::before {
+	content: none; /* Remove overlays if any */
+}

@@ -1,4 +1,4 @@
-// File: /Users/Admin/Desktop/GitHub Repositories/rmit-hack-a-venture-2024/app/page.tsx
+// File: C:\Users\Admin\Hack_A_Venture\app\page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

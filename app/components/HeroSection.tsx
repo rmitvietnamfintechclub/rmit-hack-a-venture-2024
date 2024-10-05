@@ -6,7 +6,7 @@ import '../css/HeroSection.css'
 export const HeroSection = () => {
 	return (
 		<>
-			<div className="max-md:hidden grid grid-cols-2 items-center md:px-[20vw]">
+			<div className="max-md:hidden grid grid-cols-2 items-center md:px-[10vw]">
 				<div className='justify-center mx-auto md:w-full'>
 					<div className="mx-auto">
 						<div className='mb-[16px] drop-shadow-container'>
@@ -43,11 +43,11 @@ export const HeroSection = () => {
 					</div>
 				</div>
 				<div
-					className='items-center mx-auto w-full bg-center md:pt-[100px] md:pb-[100px]'
+					className='items-center mx-auto w-full bg-center md:pt-[100px] md:pb-[100px] bg-contain'
 					style={{
 						backgroundImage: `url(${'cubes.png'})`,
 						backgroundRepeat: 'no-repeat',
-						// backgroundPosition: 'right 0px bottom 0px'
+						backgroundPosition: 'right 0px bottom 0px'
 					}}
 				>
 					<Image
@@ -93,10 +93,11 @@ export const HeroSection = () => {
 					</button>
 				</div>
 
-				<div className="items-center mx-auto w-full bg-center bg-cover"
+				<div className="items-center mx-auto w-full bg-center bg-contain"
 					style={{
 						backgroundImage: `url(${'bg-cubes.png'})`,
 						backgroundRepeat: 'no-repeat',
+
 					}}
 				>
 					<Image

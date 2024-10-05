@@ -7,7 +7,7 @@ import { MdEmail } from "react-icons/md";
 
 export const Footer = () => {
 	return (
-		<footer className="py-[50px] md:px-[170px] max-md:px-[16px] border-t-[1px] border-solid border-[#1F2937] flex flex-col gap-[80px] lg:items-center">
+		<footer className="py-[50px] md:px-[10vw] max-md:px-[16px] border-t-[1px] border-solid border-[#1F2937] flex flex-col gap-[80px] lg:items-center">
 			<section className="w-full flex flex-col gap-[50px] lg:flex-row md:justify-between">
 				<SocialMediaList />
 				<OrganizerList />

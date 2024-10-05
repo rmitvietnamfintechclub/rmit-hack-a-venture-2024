@@ -6,7 +6,7 @@ import '../css/HeroSection.css'
 export const HeroSection = () => {
 	return (
 		<>
-			<div className="max-md:hidden grid grid-cols-2 items-center md:px-[250px]">
+			<div className="max-md:hidden grid grid-cols-2 items-center md:px-[5vw]">
 				<div className='justify-center mx-auto md:w-full'>
 					<div className="mx-auto">
 						<div className='mb-[16px]'>

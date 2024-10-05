@@ -9,11 +9,11 @@ export const HeroSection = () => {
 			<div className="max-md:hidden grid grid-cols-2 items-center md:px-[250px]">
 				<div className='justify-center mx-auto md:w-full'>
 					<div className="mx-auto">
-						<div className='mb-[16px]'>
-							<h1 className='text-white text-6xl font-bold drop-shadow-lg'>
+						<div className='mb-[16px] drop-shadow-container'>
+							<h1 className='text-white text-6xl font-bold drop-shadow-text'>
 								RMIT 2024
 							</h1>
-							<h1 className='text-gradient text-6xl font-bold'>
+							<h1 className='text-gradient text-6xl font-bold drop-shadow-text'>
 								Hack-A-Venture
 							</h1>
 						</div>
@@ -61,11 +61,11 @@ export const HeroSection = () => {
 			</div>
 
 			<div className='md:hidden'>
-				<div className='mb-[16px] justify-center mx-auto text-center'>
-					<h1 className='text-5xl drop-shadow-lg shadow-lg font-sans font-bold mt-[40px]'>
+				<div className='mb-[16px] justify-center mx-auto text-center drop-shadow-container'>
+					<h1 className='text-5xl drop-shadow-lg shadow-lg font-sans font-bold mt-[40px] drop-shadow-text'>
 						RMIT 2024
 					</h1>
-					<h1 className='text-gradient text-5xl font-sans font-bold'>
+					<h1 className='text-gradient text-5xl font-sans font-bold drop-shadow-text'>
 						Hack-A-Venture
 					</h1>
 				</div>

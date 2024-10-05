@@ -32,8 +32,11 @@ body {
 	opacity: 0.6; /* Make non-centered slides less opaque */
 }
 
-/* Zoom the center slide */
-.img {
-	opacity: 1;
+.drop-shadow-text {
+    filter: drop-shadow(1px 1px 4.2px #C93FDD);
 }
 
+/* this one for the container of the text */
+.drop-shadow-container {
+    filter: drop-shadow(0px 4px 40px #B25FD6);
+}

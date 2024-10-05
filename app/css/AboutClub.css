@@ -1,7 +1,7 @@
 .text-gradient {
 	font-weight: bold;
 	background: linear-gradient(
-		200deg,
+		180deg,
 		#ffffff 2%,
 		#deb7f0 20%,
 		#ffffff 63%,
@@ -14,11 +14,6 @@
 .text-clip {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-}
-
-.drop-shadow-text {
-	filter: drop-shadow(0 0px 20px rgba(201, 63, 221, 0.5))
-		drop-shadow(0 0px 20px rgba(178, 95, 214, 0.5));
 }
 
 .slick-dots li button {

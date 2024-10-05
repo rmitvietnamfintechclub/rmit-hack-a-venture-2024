@@ -63,7 +63,7 @@ export const AboutClub = () => {
 				{/* Image Section */}
 				<div className="slider-container w-full justify-center items-center">
 					<Slider {...settings} className="center">
-						<div className="p-3 md:p-10 opacity-[2.0]">
+						<div className="p-3 md:p-10">
 							<Image
 								className="rounded-lg opacity-10"
 								src="/about_ftc_1.png"

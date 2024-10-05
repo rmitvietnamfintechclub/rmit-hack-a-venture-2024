@@ -18,7 +18,7 @@ export const HeroSection = () => {
 							</h1>
 						</div>
 
-						<div className='w-[551px] text-[#9CA3AF]'>
+						<div className='w-[551px] text-[#9CA3AF] font-normal font-sans'>
 							Organized by the RMIT FinTech Club, it’s a unique hackathon-style competition that brings together <span className='font-bold text-white'>Business</span> and <span className='font-bold text-white'>Technology</span> students to collaborate and develop innovative solutions for Vietnam's pressing social challenges.
 						</div>
 

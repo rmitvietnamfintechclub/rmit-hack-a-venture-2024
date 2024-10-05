@@ -12,9 +12,7 @@ export const ThemeSection = () => {
 						and tech focus
 					</h1>
 					<p className='md:mt-[24px] font-sans text-[#9CA3AF] max-md:mt-[16px]'>
-						Participants are required to leverage one or more of the
-						<br />
-						following technologies:
+						Participants are required to leverage one or more of the following technologies:
 					</p>
 
 					<div className="grid grid-rows-3 md:mt-[25px] md:gap-[50px] max-md:mt-[32px] max-md:gap-[12px]">

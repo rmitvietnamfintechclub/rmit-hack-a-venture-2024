@@ -43,12 +43,12 @@ export const HeroSection = () => {
 					</div>
 				</div>
 				<div
-					className='items-center mx-auto w-full bg-center md:pt-[100px] md:pb-[100px]'
+					className='items-center mx-auto w-full bg-center md:pt-[100px] md:pb-[100px] bg-contain'
 					style={{
 						backgroundImage: `url(${'cubes.png'})`,
 						backgroundRepeat: 'no-repeat',
 						backgroundSize: 'contain',
-						backgroundPosition: 'right -30px top 20px'
+						backgroundPosition: 'right -40px top 20px'
 					}}
 				>
 					<Image
@@ -94,10 +94,11 @@ export const HeroSection = () => {
 					</button>
 				</div>
 
-				<div className="items-center mx-auto w-full bg-center bg-cover"
+				<div className="items-center mx-auto w-full bg-center bg-contain"
 					style={{
 						backgroundImage: `url(${'bg-cubes.png'})`,
 						backgroundRepeat: 'no-repeat',
+
 					}}
 				>
 					<Image

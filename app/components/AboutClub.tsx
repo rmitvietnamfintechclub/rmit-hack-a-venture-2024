@@ -98,7 +98,7 @@ export const AboutClub = () => {
 				</div>
 
 			</div >
-			<div className="grid grid-cols-3 md:px-[250px] md:mt-[60px] max-md:mt-[30px] justify-items-center items-center font-sans max-md:px-[16px]">
+			<div className="grid grid-cols-3 md:px-[10vw] md:mt-[60px] max-md:mt-[30px] justify-items-center items-center font-sans max-md:px-[16px]">
 				<div className="flex flex-col items-center max-md:px-[16px] max-md:justify-around max-md:h-full">
 					<span className="text-[#C93FDD] md:text-4xl text-2xl font-semibold font-sans">80+</span>
 					<span className="text-lg font-sans text-center text-[#9CA3AF]">Club Members</span>
@@ -112,7 +112,7 @@ export const AboutClub = () => {
 					<span className="text-lg font-sans text-center text-[#9CA3AF]">Club Projects</span>
 				</div>
 			</div>
-			<div className="grid grid-cols-3 md:px-[250px] md:mt-[100px] max-md:mt-[30px] justify-items-center items-center font-sans max-md:px-[16px]">
+			<div className="grid grid-cols-3 md:px-[10vw] md:mt-[100px] max-md:mt-[30px] justify-items-center items-center font-sans max-md:px-[16px]">
 				<div className="flex flex-col items-center max-md:px-[16px] max-md:justify-around max-md:h-full">
 					<span className="text-[#C93FDD] md:text-4xl text-2xl font-semibold font-sans">4X</span>
 					<span className="text-lg font-sans text-center text-[#9CA3AF]">Best Club Of Semester</span>
@@ -127,7 +127,7 @@ export const AboutClub = () => {
 				</div>
 			</div>
 
-			<div className="md:px-[250px] max-md:px-[16px] md:mt-[80px]">
+			<div className="md:px-[10vw] max-md:px-[16px] md:mt-[80px]">
 				<h1 className="max-md:hidden md:text-6xl text-3xl font-bold font-sans text-center md:mb-[48px] bg-gradient-to-r from-white via-white to-transparent text-clip"
 					style={{ backgroundSize: '75%' }}
 				>

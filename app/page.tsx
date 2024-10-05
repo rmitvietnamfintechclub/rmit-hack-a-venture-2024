@@ -20,6 +20,7 @@ export default function Home() {
 			<AboutClub />
 			<WhoSection />
 			<ThemeSection />
+			<RoundTimeline />
 			<WorkshopTimeline />
 			<PrizeSection />
 			<JudgeSection />

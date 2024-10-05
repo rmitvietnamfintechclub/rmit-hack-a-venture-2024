@@ -4,14 +4,13 @@ import React, { FC } from "react";
 export const WorkshopTimeline = () => {
 	return (
 		<section className="w-full flex flex-col items-center">
-			<h1
-				className={`text-[45px] lg:text-[57px] text-center text-white font-semibold px-[40px] max-md:mt-[48px]`}
-				style={{
-					textShadow: "1px 3px 15px rgba(201, 63, 221, 1)",
-				}}
-			>
-				Hack-A-Venture Timeline
-			</h1>
+			<div className="drop-shadow-container">
+				<h1
+					className={`text-[45px] lg:text-[57px] text-center text-white font-semibold md:px-[40px] max-md:mt-[48px] drop-shadow-text`}
+				>
+					Hack-A-Venture Timeline
+				</h1>
+			</div>
 			<RoundFormatTimeline />
 			<TrainingWorkshopTimeline />
 		</section>

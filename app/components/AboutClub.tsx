@@ -47,7 +47,11 @@ export const AboutClub = () => {
 	};
 
 	return (
-		<>
+		<div
+			style={{
+				background: "linear-gradient(0deg, #000000 0%, #111827 42%, #000000 100%)"
+			}}
+		>
 			<div className='px-[16px]' >
 				{/* Text Section */}
 				< div className='w-fit mx-auto mb-8' >
@@ -65,7 +69,7 @@ export const AboutClub = () => {
 					<Slider {...settings} className="center">
 						<div className="p-3 md:p-10">
 							<Image
-								className="rounded-lg opacity-10"
+								className="rounded-lg"
 								src="/about_ftc_1.png"
 								alt="About FinTech Club 1"
 								width={4000}
@@ -99,12 +103,12 @@ export const AboutClub = () => {
 					<span className="text-[#C93FDD] md:text-4xl text-2xl font-semibold font-sans">80+</span>
 					<span className="text-lg font-sans text-center text-[#9CA3AF]">Club Members</span>
 				</div>
-				<div className="flex flex-col items-center border-r-[1.5px] border-l-[1.5px] border-[#582768] md:px-[134px] md:py-[42px] max-md:px-[16px] max-md:justify-around max-md:h-full">
+				<div className="flex flex-col items-center border-r-[1.5px] border-l-[1.5px] border-[#582768] md:px-[134px] md:py-[42px] max-md:px-[16px] max-md:justify-around max-md:h-full drop-shadow-container">
 					<span className="text-gradient md:text-6xl text-3xl font-semibold font-sans drop-shadow-text">20+</span>
-					<span className="text-lg font-sans text-center text-[#FBF6FD] items-center mx-automd:mt-[32px]">Industry Partners</span>
+					<span className="text-lg font-sans text-center text-[#FBF6FD] md:mt-[32px] justify-center">Industry Partners</span>
 				</div>
 				<div className="flex flex-col items-center max-md:justify-around max-md:h-full max-md:px-[16px]">
-					<span className="text-[#C93FDD] md:text-4xl text-2xl font-semibold font-sans ">50+</span>
+					<span className="text-[#C93FDD] md:text-4xl text-2xl font-semibold font-sans">50+</span>
 					<span className="text-lg font-sans text-center text-[#9CA3AF]">Club Projects</span>
 				</div>
 			</div>
@@ -113,7 +117,7 @@ export const AboutClub = () => {
 					<span className="text-[#C93FDD] md:text-4xl text-2xl font-semibold font-sans">4X</span>
 					<span className="text-lg font-sans text-center text-[#9CA3AF]">Best Club Of Semester</span>
 				</div>
-				<div className="flex flex-col items-center border-r-[1.5px] border-l-[1.5px] border-[#582768] md:px-[100px] md:py-[42px] max-md:px-[16px] justify-around h-full">
+				<div className="flex flex-col items-center border-r-[1.5px] border-l-[1.5px] border-[#582768] md:px-[100px] md:py-[42px] max-md:px-[16px] justify-around h-full drop-shadow-container">
 					<span className="text-gradient md:text-6xl text-3xl font-semibold font-sans drop-shadow-text">300M+</span>
 					<span className="text-lg font-sans text-center text-[#FBF6FD] md:mt-[32px] justify-center">Fund Raised For Projects</span>
 				</div>
@@ -215,6 +219,6 @@ export const AboutClub = () => {
 					Through various initiatives such as workshops, events, training programs, and competitions like Hack-A-Venture, the club empowers students to explore the future of financial technology and make a meaningful impact in the community.
 				</p>
 			</div>
-		</>
+		</div>
 	)
 }

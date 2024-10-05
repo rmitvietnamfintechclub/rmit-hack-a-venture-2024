@@ -21,10 +21,10 @@ export default function Home() {
 			<WhoSection />
 			<ThemeSection />
 			<RoundTimeline />
-			{/* <WorkshopTimeline />
+			<WorkshopTimeline />
 			<PrizeSection />
 			<JudgeSection />
-			<MentorSection /> */}
+			<MentorSection />
 			<Footer />
 		</>
 	);

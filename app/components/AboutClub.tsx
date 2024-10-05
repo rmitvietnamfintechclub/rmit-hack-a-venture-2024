@@ -105,10 +105,10 @@ export const AboutClub = () => {
 				</div>
 				<div className="flex flex-col items-center border-r-[1.5px] border-l-[1.5px] border-[#582768] md:px-[134px] md:py-[42px] max-md:px-[16px] max-md:justify-around max-md:h-full drop-shadow-container">
 					<span className="text-gradient md:text-6xl text-3xl font-semibold font-sans drop-shadow-text">20+</span>
-					<span className="text-lg font-sans text-center text-[#FBF6FD] items-center mx-automd:mt-[32px]">Industry Partners</span>
+					<span className="text-lg font-sans text-center text-[#FBF6FD] md:mt-[32px] justify-center">Industry Partners</span>
 				</div>
 				<div className="flex flex-col items-center max-md:justify-around max-md:h-full max-md:px-[16px]">
-					<span className="text-[#C93FDD] md:text-4xl text-2xl font-semibold font-sans drop-shadow-text">50+</span>
+					<span className="text-[#C93FDD] md:text-4xl text-2xl font-semibold font-sans">50+</span>
 					<span className="text-lg font-sans text-center text-[#9CA3AF]">Club Projects</span>
 				</div>
 			</div>

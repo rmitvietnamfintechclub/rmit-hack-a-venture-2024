@@ -1,50 +1,73 @@
-import React from 'react'
-import { Card, CardContent } from "@/components/ui/card"
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
+"use client";
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { dot } from "node:test/reporters";
 
 export const PartnerSection = () => {
   return (
-    <div className='bg-black w-full mx-auto flex flex-col items-center justify-center'>
-      <h1
-        className={`text-[45px] lg:text-[57px] text-white font-semibold px-[40px]`}
-      >
+    <div className="bg-black text-center">
+      <h1 className="text-[32px] lg:text-[57px] text-white font-semibold mb-8">
         Our Partners
       </h1>
-      <p className="text-[#9CA3AF] lg:text-[20px] mb-6">BLOCKCHAIN AND CRYPTOCURRENCY</p>
-      <CarouselSize />
+      <p className="text-[#9CA3AF] text-[14px] lg:text-[20px] font-semibold mb-8">
+        BLOCKCHAIN AND CRYPTOCURRENCY
+      </p>
+      <PartnerList />
     </div>
-  )
-}
+  );
+};
 
-export function CarouselSize() {
+export function PartnerList() {
+  const settings = {
+    dots: true, 
+    infinite: true,
+    speed: 500,
+    slidesToShow: 8,
+    slidesToScroll: 2,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 8,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 768, 
+        settings: {
+          slidesToShow: 8, 
+          slidesToScroll: 2,
+          arrows: false,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 480, 
+        settings: {
+          slidesToShow: 4, 
+          slidesToScroll: 1,
+          rows: 2, 
+          arrows: false,
+          dots: true,
+        },
+      },
+    ],
+  };
+
   return (
-    <Carousel
-      opts={{
-        align: "start",
-      }}
-      className="w-full max-w-5xl"
-    >
-      <CarouselContent>
+    <div className="slider-container bg-black w-4/6 mx-auto px-50">
+      <Slider {...settings}>
         {Array.from({ length: 8 }).map((_, index) => (
-          <CarouselItem key={index} className="md:basis-1/12 lg:basis-1/6 ">
-            <div className="p-1 ">
-              <Card className='rounded-full '>
-                <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <span className="text-3xl font-semibold">{index + 1}</span>
-                </CardContent>
-              </Card>
+          <div className="rounded-full p-3">
+            <div className="bg-blue-300 text-white flex aspect-square rounded-full items-center justify-center">
+              {/* <span>iVolunteer Vietnam</span> */}
             </div>
-          </CarouselItem>
+          </div>
         ))}
-      </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
-    </Carousel>
-  )
+      </Slider>
+    </div>
+  );
 }

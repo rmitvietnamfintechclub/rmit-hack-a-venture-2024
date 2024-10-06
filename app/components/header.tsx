@@ -72,7 +72,7 @@ const LaptopNav = () => {
 					See Booklet
 				</a>
 				<a href="" className="no-underline font-semibold  text-[#C93FDD]">Contact Us</a>
-				<button className="px-[15px] py-[5px] rounded-2xl bg-[#B25FD6] text-white">
+				<button className="px-[15px] py-[5px] rounded-2xl bg-[#B25FD6] hover:bg-[#63247e] text-white">
 					Join Now
 				</button>
 			</div>

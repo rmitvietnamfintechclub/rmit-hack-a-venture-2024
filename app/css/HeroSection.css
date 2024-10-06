@@ -7,7 +7,7 @@
             #CA8CE6 82%,
             #F5EBFC 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: initial;
 }
 
 .drop-shadow-lg {

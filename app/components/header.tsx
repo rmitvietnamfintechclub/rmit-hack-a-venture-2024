@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useRef } from "react";
 import { useState } from "react";
-import { delay, motion } from "framer-motion"
+import { motion } from "framer-motion"
 import '../css/Header.css'
 
 

@@ -57,15 +57,15 @@ export const HeroSection = () => {
 							</div>
 						</motion.h1>
 
-						<div className='mt-[40px] flex w-[247px] justify-between'>
+						<div className='mt-[40px] flex w-[280px] justify-between'>
 							<button className='text-[#C93FDD] font-semibold text-md hover:underline hover:text-white'>
-								See Booklet
+								<a href="https://docs.google.com/document/d/1FGA7Ds3eAuEGMV6rF1yvot5bwMmflQaoPDTHylie4JA/edit" target="_blank" className="no-underline">See Handbook</a>
 							</button>
 
 							<button
 								className='w-[130px] h-[48px] bg-[#C93FDD] rounded-[12px] justify-items-center flex justify-center items-center hover:text-xl text-bold ease-in transition-all duration-200 font-semibold font-poppins'
 							>
-								Join Now
+								<a href="https://docs.google.com/forms/d/1azQmLTEt04oDg3TwJyTmQ-wbzgxiPLibbaQdSiTHtVU/viewform?edit_requested=true" target="_blank">Join Now</a>
 								<Image
 									src={'/Vector.png'}
 									alt='arrow'

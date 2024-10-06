@@ -6,7 +6,6 @@ import { HeroSection } from "./components/HeroSection";
 import { JudgeSection } from "./components/JudgeSection";
 import { MentorSection } from "./components/MentorSection";
 import { PrizeSection } from "./components/PrizeSection";
-import { RoundTimeline } from "./components/RoundTimeline";
 import { ThemeSection } from "./components/ThemeSection";
 import { WhoSection } from "./components/WhoSection";
 import { WorkshopTimeline } from "./components/WorkshopTimeline";

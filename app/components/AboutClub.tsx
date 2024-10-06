@@ -125,18 +125,18 @@ export const AboutClub = () => {
 					<span className="text-[#C93FDD] md:text-4xl text-2xl font-semibold font-sans">5000+</span>
 					<span className="text-lg font-sans text-center text-[#9CA3AF]">Social Media Followings</span>
 				</div>
-			</div>	
+			</div>
 
 			<div className="md:px-[10vw] max-md:px-[16px] md:mt-[80px]">
 				<h1 className="max-md:hidden md:text-6xl text-3xl font-bold font-sans text-center md:mb-[48px] bg-gradient-to-r from-white via-white to-transparent text-clip"
-					style={{ backgroundSize: '75%' }}
+					style={{ backgroundSize: '100%' }}
 				>
 					Our previous activities
 				</h1>
 
 				<h1 className="md:hidden md:text-6xl text-3xl font-bold font-sans text-center md:mb-[48px] max-md:mt-[40px] max-md:mb-[24px]"
 					style={{
-						background: `linear-gradient(to right, transparent, #ffffff 0%, #9CA3AF 50%, transparent)`,
+						// background: `linear-gradient(to right, transparent, #ffffff 0%, #9CA3AF 50%, transparent)`,
 						backgroundRepeat: 'no-repeat',
 						WebkitBackgroundClip: 'text',
 						WebkitTextFillColor: 'transparent',

@@ -1,0 +1,23 @@
+.slick-dots li button {
+	width: 6px;
+	height: 6px;
+}
+
+/* Change dot colors */
+.slick-dots li button:before {
+	color: #9ca3af;
+}
+
+/* Change dot color when active */
+.slick-dots li.slick-active button:before {
+	color: #c93fdd;
+}
+
+.slick-slide div img {
+    opacity: 1; /* Ensure full opacity */
+    filter: none; /* Remove any filters affecting brightness */
+}
+
+.slick-slider::before {
+	content: none; /* Remove overlays if any */
+}

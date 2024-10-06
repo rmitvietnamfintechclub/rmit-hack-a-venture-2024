@@ -19,7 +19,6 @@ const JudgeItem = (props: JudgeInfo) => {
 			<Image src={`/judges/${image_path}`} alt={name} className="w-full h-auto rounded-xl mb-4 object-cover" width={200} height={200} />
 			<h3 className="md:text-2xl max-md:text-xl font-semibold mb-2">{name}</h3>
 			<p className="md:text-base max-md:text-md text-[#9CA3AF]">{title}</p>
-			<p className="md:text-base max-md:text-md text-[#9CA3AF]">Testing</p>
 		</div>
 	)
 }
@@ -37,13 +36,23 @@ export const JudgeSection = () => {
 			{
 				breakpoint: 700,
 				settings: {
-					slidesToShow: 1.1,
+					slidesToShow: 1,
 					swipeToSlide: true,
 				}
 			}
 		]
 	};
 	const judges = [
+		{
+			name: "Mr. Nhat Le",
+			title: "Founder & CEO, AirCity",
+			image_path: "Nhat_Le.png"
+		},
+		{
+			name: "Mr. Nghiem Sy Phu",
+			title: "Senior Cyber Security Manager, Fossil Group",
+			image_path: "Phu_Nghiem.png"
+		},
 		{
 			name: "Dr. Huy Pham",
 			title: "Lecturer, Finance, RMIT Vietnam",
@@ -78,7 +87,38 @@ export const JudgeSection = () => {
 			name: "Dr. Minh Dinh",
 			title: "Senior Lecturer, A.I., RMIT Vietnam",
 			image_path: "Minh_Dinh.png"
-		}];
+		},
+		{
+			name: "Dr. Timothy McBush Hiele",
+			title: "Lecturer, Digital Business RMIT Vietnam",
+			image_path: "Timothy_Hiele.png"
+		},
+		{
+			name: "Dr. Majo George",
+			title: "Senior Lecturer, Business & Law, RMIT Vietnam",
+			image_path: "Majo_George.png"
+		},
+		{
+			name: "Dr. Jeff Nijsse",
+			title: "Senior Lecturer, Software Engineering, RMIT Vietnam",
+			image_path: "Jeff_Nijsse.png"
+		},
+		{
+			name: "Dr. Muhammad Ashfa",
+			title: "Research Fellow, RMIT Vietnam",
+			image_path: "Mud_Ashfaq.png"
+		},
+		{
+			name: "Dr. Tam Le",
+			title: "Lecturer, Economics & Finance, RMIT Vietnam",
+			image_path: "Tam_Le.png"
+		},
+		{
+			name: "Dr. Son Ha",
+			title: "Lecturer, Blockchain, RMIT Vietnam",
+			image_path: "Son_Ha.png"
+		}
+	];
 	return (
 		<>
 			<div

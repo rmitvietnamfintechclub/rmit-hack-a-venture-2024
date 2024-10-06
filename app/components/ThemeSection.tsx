@@ -4,7 +4,7 @@ import '../css/HeroSection.css'
 
 export const ThemeSection = () => {
 	return (
-		<div className='md:px-[250px] md:py-[80px] w-full max-md:px-[16px] max-md:pt-[56px]'>
+		<div className='md:px-[10vw] md:py-[80px] w-full max-md:px-[16px] max-md:pt-[56px]'>
 			<div className='md:grid md:grid-cols-10 w-full md:pt-[80px]'>
 				<div className='md:col-span-5 w-full h-full'>
 					<div className='drop-shadow-container'>

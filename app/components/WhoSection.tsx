@@ -6,7 +6,7 @@ export const WhoSection = () => {
 
 	return (
 		<div
-			className='md:px-[250px] md:mt-[100px] max-md:mt-[56px]'
+			className='md:px-[10vw] md:mt-[100px] max-md:mt-[56px]'
 		>
 			<div className='text-center max-md:px-[33px] font-sans font-semibold md:text-[57px] max-md:text-[40px] max-md:leading-[50px]'>
 				<span className='text-[#C93FDD]'>Who can join </span>

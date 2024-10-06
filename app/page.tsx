@@ -1,7 +1,7 @@
 import { AboutClub } from "./components/AboutClub";
 import { AboutUsSection } from "./components/AboutUsSection";
 import { Footer } from "./components/Footer";
-import { Header } from "./components/Header";
+import { Header } from "./components/header";
 import { HeroSection } from "./components/HeroSection";
 import { JudgeSection } from "./components/JudgeSection";
 import { MentorSection } from "./components/MentorSection";
@@ -14,7 +14,7 @@ import { WorkshopTimeline } from "./components/WorkshopTimeline";
 
 export default function Home() {
 	return (
-		<>
+		<div>
 			<Header />
 			<HeroSection />
 			<AboutUsSection />
@@ -22,12 +22,11 @@ export default function Home() {
 			<PartnerSection />
 			<WhoSection />
 			<ThemeSection />
-			<RoundTimeline />
 			<WorkshopTimeline />
 			<PrizeSection />
 			<JudgeSection />
 			<MentorSection />
 			<Footer />
-		</>
+		</div>
 	);
 }

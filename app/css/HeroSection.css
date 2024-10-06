@@ -9,11 +9,15 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+<<<<<<< HEAD
 
 .drop-shadow-lg {
     filter: drop-shadow(0 0px 20px rgba(201, 63, 221, 0.5)) drop-shadow(0 0px 20px rgba(178, 95, 214, 0.5));
 }
 
+=======
+    
+>>>>>>> 789a04bad0fe62bb384d1a9a8043103c42ec823e
 .bg-gradient {
     background: linear-gradient(200deg,
             #DEB7F0 0%,

@@ -4,8 +4,6 @@ import { motion} from "framer-motion"
 import '../css/Header.css'
 
 export const Header = () => {
-
-
 	return (
 		<>
 			<LaptopNav />

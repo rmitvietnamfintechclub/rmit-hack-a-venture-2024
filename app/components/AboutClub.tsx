@@ -125,7 +125,7 @@ export const AboutClub = () => {
 					<span className="text-[#C93FDD] md:text-4xl text-2xl font-semibold font-sans">5000+</span>
 					<span className="text-lg font-sans text-center text-[#9CA3AF]">Social Media Followings</span>
 				</div>
-			</div>	
+			</div>
 
 			<div className="md:px-[10vw] max-md:px-[16px] md:mt-[80px]">
 				<h1 className="max-md:hidden md:text-6xl text-3xl font-bold font-sans text-center md:mb-[48px] bg-gradient-to-r from-white via-white to-transparent text-clip"
@@ -215,7 +215,7 @@ export const AboutClub = () => {
 						</div>
 					</Slider>
 				</div>
-				<p className="text-lg font-sans items-center justify-center text-center text-[#9CA3AF] md:px-[200px] md:mt-[48px] max-md:mt-[32px]">
+				<p className="text-lg items-center justify-center text-center text-[#9CA3AF] md:px-[160px] md:mt-[48px] max-md:mt-[32px]">
 					Through various initiatives such as workshops, events, training programs, and competitions like Hack-A-Venture, the club empowers students to explore the future of financial technology and make a meaningful impact in the community.
 				</p>
 			</div>

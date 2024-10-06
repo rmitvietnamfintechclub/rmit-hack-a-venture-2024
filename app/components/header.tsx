@@ -1,9 +1,7 @@
 'use client'
-import React, { useEffect, useRef } from "react";
-import { useState } from "react";
-import { delay, motion } from "framer-motion"
+import React, { useEffect, useRef, useState } from "react";
+import { motion} from "framer-motion"
 import '../css/Header.css'
-
 
 export const Header = () => {
 	return (
@@ -32,6 +30,7 @@ const LaptopNav = () => {
 					/>
 				</a>
 				<a
+					href="/"
 					className={`hover:text-white text-[#9CA3AF] font-normal  cursor-pointer`}
 					style={{
 						textShadow:
@@ -43,6 +42,8 @@ const LaptopNav = () => {
 					<h1>About Hack-A-Venture</h1>
 				</a>
 				<a
+					href="https://docs.google.com/document/d/1O8YfpM47p9qRoE-2Vimq77p2ZAeLQ1-ynD67aE7Ys2Q/edit"
+					target="_blank"
 					className={`hover:text-white text-[#9CA3AF] font-normal  cursor-pointer`}
 					style={{
 						textShadow:
@@ -68,12 +69,12 @@ const LaptopNav = () => {
 
 			{/*-----------------------------right side ------------------------*/}
 			<div className="h-full w-[320px] flex justify-between items-center">
-				<a href="" className="no-underline font-semibold  text-[#C93FDD]">
-					See Booklet
+				<a href="https://docs.google.com/document/d/1FGA7Ds3eAuEGMV6rF1yvot5bwMmflQaoPDTHylie4JA/edit" target="_blank" className="no-underline font-semibold  text-[#C93FDD]">
+					See Handbook
 				</a>
-				<a href="" className="no-underline font-semibold  text-[#C93FDD]">Contact Us</a>
+				<a href="mailto:rmithackaventure0108@gmail.com" className="no-underline font-semibold  text-[#C93FDD]">Contact Us</a>
 				<button className="px-[15px] py-[5px] rounded-2xl bg-[#B25FD6] hover:bg-[#63247e] text-white">
-					Join Now
+					<a href="https://docs.google.com/forms/d/1azQmLTEt04oDg3TwJyTmQ-wbzgxiPLibbaQdSiTHtVU/viewform?edit_requested=true" target="_blank">Join Now</a>
 				</button>
 			</div>
 		</nav>
@@ -209,6 +210,7 @@ const Navigation = ({ hamburgerBarIsActive }: { hamburgerBarIsActive: boolean })
 					whileTap={{ scale: 0.95 }}
 				>
 					<a
+						href="/"
 						className={`hover:text-white text-[#9CA3AF] font-normal  cursor-pointer`}
 
 					>
@@ -222,6 +224,8 @@ const Navigation = ({ hamburgerBarIsActive }: { hamburgerBarIsActive: boolean })
 					whileTap={{ scale: 0.95 }}
 				>
 					<a
+						href="https://docs.google.com/document/d/1O8YfpM47p9qRoE-2Vimq77p2ZAeLQ1-ynD67aE7Ys2Q/edit"
+						target="_blank"
 						className={`hover:text-white text-[#9CA3AF] font-normal cursor-pointer`}
 					// style={{
 					// 	textShadow:
@@ -252,8 +256,8 @@ const Navigation = ({ hamburgerBarIsActive }: { hamburgerBarIsActive: boolean })
 					whileHover={{ scale: 1.1 }}
 					whileTap={{ scale: 0.95 }}
 				>
-					<a href="" className="no-underline font-semibold  text-[#C93FDD] block cursor-pointer">
-						See Booklet
+					<a href="https://docs.google.com/document/d/1FGA7Ds3eAuEGMV6rF1yvot5bwMmflQaoPDTHylie4JA/edit" target="_blank" className="no-underline font-semibold  text-[#C93FDD] block cursor-pointer">
+						See Handbook
 					</a>
 				</motion.li>
 
@@ -262,7 +266,7 @@ const Navigation = ({ hamburgerBarIsActive }: { hamburgerBarIsActive: boolean })
 					whileHover={{ scale: 1.1 }}
 					whileTap={{ scale: 0.95 }}
 				>
-					<a href="" className="no-underline font-semibold  text-[#C93FDD] block cursor-pointer">
+					<a href="mailto:rmithackaventure0108@gmail.com" className="no-underline font-semibold  text-[#C93FDD] block cursor-pointer">
 						Contact Us
 					</a>
 				</motion.li>
@@ -273,7 +277,7 @@ const Navigation = ({ hamburgerBarIsActive }: { hamburgerBarIsActive: boolean })
 					whileTap={{ scale: 0.95 }}
 				>
 					<button className="px-[15px] py-[2px] rounded-2xl bg-[#B25FD6] text-white">
-						Join Now
+						<a href="https://docs.google.com/forms/d/1azQmLTEt04oDg3TwJyTmQ-wbzgxiPLibbaQdSiTHtVU/viewform?edit_requested=true" target="_blank">Join Now</a>
 					</button>
 				</motion.li>
 

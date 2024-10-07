@@ -1,9 +1,7 @@
 'use client'
-import React, { useEffect, useRef } from "react";
-import { useState } from "react";
-import { delay, motion } from "framer-motion"
+import React, { useEffect, useRef, useState } from "react";
+import { motion} from "framer-motion"
 import '../css/Header.css'
-
 
 export const Header = () => {
 	return (
@@ -75,7 +73,7 @@ const LaptopNav = () => {
 					See Handbook
 				</a>
 				<a href="mailto:rmithackaventure0108@gmail.com" className="no-underline font-semibold  text-[#C93FDD]">Contact Us</a>
-				<button className="px-[15px] py-[5px] rounded-2xl bg-[#B25FD6] text-white">
+				<button className="px-[15px] py-[5px] rounded-2xl bg-[#B25FD6] hover:bg-[#63247e] text-white">
 					<a href="https://docs.google.com/forms/d/1azQmLTEt04oDg3TwJyTmQ-wbzgxiPLibbaQdSiTHtVU/viewform?edit_requested=true" target="_blank">Join Now</a>
 				</button>
 			</div>

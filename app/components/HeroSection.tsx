@@ -2,6 +2,10 @@
 import Image from 'next/image'
 import React from 'react'
 import '../css/HeroSection.css'
+import { motion } from 'framer-motion'
+
+const DURATION = 0.15;
+const STAGGER = 0.015;
 
 export const HeroSection = () => {
 	return (
@@ -10,17 +14,48 @@ export const HeroSection = () => {
 				<div className='justify-center mx-auto md:w-full'>
 					<div className="mx-auto">
 						<div className='mb-[16px] drop-shadow-container'>
-							<h1 className='text-white text-6xl font-bold drop-shadow-text'>
-								RMIT 2024
-							</h1>
-							<h1 className='text-gradient text-6xl font-bold drop-shadow-text'>
-								Hack-A-Venture
-							</h1>
+
+							<motion.h1
+								initial="initial"
+								whileHover="hovered"
+								className='overflow-hidden relative w-fit text-white text-6xl font-bold drop-shadow-text'
+								style={{
+									lineHeight: "0.9",
+								}}
+								transition={{
+									staggerChildren: 0.01,
+								}}
+							>
+								<FlipText>RMIT 2024</FlipText>
+							</motion.h1>
+
+							<motion.h1
+								initial="initial"
+								whileHover="hovered"
+								className='overflow-hidden relative w-fit'
+								style={{
+									lineHeight: "0.9",
+								}}
+								transition={{
+									staggerChildren: 0.01,
+								}}
+							>
+
+								<div className='text-gradient text-white text-6xl font-bold drop-shadow-text'>
+									<FlipText>Hack-A-Venture</FlipText>
+								</div>
+							</motion.h1>
 						</div>
 
-						<div className='w-[551px] text-[#9CA3AF] font-normal font-sans'>
-							Organized by the RMIT FinTech Club, it’s a unique hackathon-style competition that brings together <span className='font-bold text-white'>Business</span> and <span className='font-bold text-white'>Technology</span> students to collaborate and develop innovative solutions for Vietnam's pressing social challenges.
-						</div>
+						<motion.h1
+							initial={{ opacity: 0, y: 20 }}
+							animate={{ opacity: 1, y: 0 }}
+							transition={{ delay: 0.5, duration: 0.5 }}
+						>
+							<div className='w-[551px] text-[#9CA3AF] font-normal font-sans'>
+								Organized by the RMIT FinTech Club, it’s a unique hackathon-style competition that brings together <span className='font-bold text-white'>Business</span> and <span className='font-bold text-white'>Technology</span> students to collaborate and develop innovative solutions for Vietnam's pressing social challenges.
+							</div>
+						</motion.h1>
 
 						<div className='mt-[40px] flex w-[280px] justify-between'>
 							<button className='text-[#C93FDD] font-semibold text-md hover:underline hover:text-white'>
@@ -28,7 +63,7 @@ export const HeroSection = () => {
 							</button>
 
 							<button
-								className='w-[130px] h-[48px] bg-[#C93FDD] rounded-[12px] justify-items-center flex justify-center items-center hover:text-xl text-bold ease-in transition-all duration-200 font-semibold font-poppins'
+								className='w-[130px] h-[48px] bg-[#C93FDD] rounded-[12px] justify-items-center flex justify-center items-center hover:text-xl text-bold text-white ease-in transition-all duration-200 font-semibold font-poppins'
 							>
 								<a href="https://docs.google.com/forms/d/1azQmLTEt04oDg3TwJyTmQ-wbzgxiPLibbaQdSiTHtVU/viewform?edit_requested=true" target="_blank">Join Now</a>
 								<Image
@@ -113,3 +148,60 @@ export const HeroSection = () => {
 		</>
 	)
 }
+
+const FlipText = ({ children }: { children: string }) => {
+	const characters = children.split("").map(char => char === ' ' ? '\u00A0' : char);
+	return (
+		<>
+			<div>
+				{characters.map((char, index) => (
+					<motion.span
+						key={index}
+						variants={{
+							initial: {
+								y: 0,
+							},
+							hovered: {
+								y: "-100%",
+							}
+						}}
+						transition={{
+							duration: DURATION,
+							ease: "easeInOut",
+							delay: index * STAGGER,
+						}}
+						className='inline-block'
+					>
+						{char}
+					</motion.span>
+				))}
+			</div>
+			<div
+				className='absolute inset-0'
+			>
+				{characters.map((char, index) => (
+					<motion.span
+						key={index}
+						variants={{
+							initial: {
+								y: "100%",
+							},
+							hovered: {
+								y: 0,
+							}
+						}}
+						transition={{
+							duration: DURATION,
+							ease: "easeInOut",
+							delay: index * STAGGER,
+						}}
+						className='inline-block'
+					>
+						{char}
+					</motion.span>
+				))}
+			</div>
+		</>
+	)
+}
+

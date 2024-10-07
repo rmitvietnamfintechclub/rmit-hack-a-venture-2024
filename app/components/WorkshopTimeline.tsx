@@ -103,11 +103,21 @@ const TrainingWorkshopTimeline = () => {
 				rounded={false}
 				numberOfOrder={3}
 				rightSideOfTextSection={true}
-				timeRangeText="Date TBA"
+				timeRangeText="On HackDay 01"
 				dashLineColor="#000000 0%, #22E29A 47%, #000000 100%"
 				headline="WORKSHOP 03"
 				subHeadline="UI/UX Design and Pitching Techniques"
 				paragraph="This session will help participants create user-friendly designs and develop compelling presentations for their final pitch."
+			/>
+      	<DetailTimeLine
+				rounded={false}
+				numberOfOrder={4}
+				rightSideOfTextSection={false}
+				timeRangeText="Date TBA"
+				dashLineColor="#000000 0%, #22E29A 47%, #000000 100%"
+				headline="WORKSHOP 04"
+				subHeadline="Loading..."
+				paragraph="The Hack-A-Venture Organizing Committee is exploring more Workshop opportunities, to add more value to participants. We aim to work further with our partners to develop this further!"
 			/>
 		</section>
 	);
@@ -223,7 +233,8 @@ const TimelineRange: React.FC<{
 				? "text-[#0EA2FF]"
 				: numberOfOrder == 2
 					? "text-[#10D8D8]"
-					: numberOfOrder == 3 && "text-[#22E29A]"
+					: numberOfOrder == 3 ? "text-[#22E29A]"
+					: numberOfOrder == 4 && "text-[#22E29A]"
 				}`}
 		>
 			{timeRangeText}
@@ -243,7 +254,8 @@ const VerticalLine: React.FC<{ numberOfOrder: number; rounded: boolean }> = ({
 					? "#002840"
 					: numberOfOrder == 2
 						? "#023233"
-						: numberOfOrder == 3 && "#012417"
+						: numberOfOrder == 3  ? "#012417"
+						: numberOfOrder == 4  && "#012417"
 					}, transparent`,
 			}}
 		/>

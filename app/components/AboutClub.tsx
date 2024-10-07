@@ -314,7 +314,7 @@ export const AboutClub = () => {
 					variants={titleVariants}
 					transition={{ duration: 1.3, delay: 1.8 }}
 				>
-					<p className="text-lg items-center justify-center text-center text-[#9CA3AF] md:px-[160px] md:mt-[48px] max-md:mt-[32px] max-md:hidden">
+					<p className="text-lg items-center justify-center text-center text-white md:px-[160px] md:mt-[48px] max-md:mt-[32px] max-md:hidden">
 						Through various initiatives such as workshops, events, training programs, and competitions like Hack-A-Venture, the club empowers students to explore the future of financial technology and make a meaningful impact in the community.
 					</p>
 				</motion.div>
@@ -324,7 +324,7 @@ export const AboutClub = () => {
 					variants={titleVariants}
 					transition={{ duration: 1.3, delay: 0 }}
 				>
-					<p className="text-lg items-center justify-center text-center text-[#9CA3AF] md:px-[160px] md:mt-[48px] max-md:mt-[32px] md:hidden">
+					<p className="text-lg items-center justify-center text-center text-white md:px-[160px] md:mt-[48px] max-md:mt-[32px] md:hidden">
 						Through various initiatives such as workshops, events, training programs, and competitions like Hack-A-Venture, the club empowers students to explore the future of financial technology and make a meaningful impact in the community.
 					</p>
 				</motion.div>

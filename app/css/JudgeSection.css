@@ -1,4 +1,9 @@
 .slick-slide div {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	opacity: 0 !important;
 }

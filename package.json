@@ -11,6 +11,7 @@
   "dependencies": {
     "@chakra-ui/react": "^2.10.1",
     "@react-three/fiber": "^8.17.9",
+    "clsx": "^2.1.1",
     "fa": "^1.0.1",
     "framer-motion": "^11.11.1",
     "framer-motion-3d": "^11.11.1",
@@ -26,6 +27,7 @@
     "react-use-measure": "^2.1.1",
     "slick-carousel": "^1.8.1",
     "swiper": "^11.1.14",
+    "tabler-icons-react": "^1.56.0",
     "three": "^0.169.0"
   },
   "devDependencies": {

@@ -5,12 +5,52 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from 'next/image';
 import React from 'react';
 import '../css/JudgeSection.css';
+import clsx from "clsx";
+import { HTMLAttributes } from "react";
+import { ChevronLeft, ChevronRight } from "tabler-icons-react";
 
 interface JudgeInfo {
 	name: string,
 	title: string,
 	image_path: string,
 }
+
+interface ArrowProps extends HTMLAttributes<HTMLDivElement> {
+	buttonOnClick?: () => void;
+}
+
+export const PreArrow: React.FC<ArrowProps> = ({ buttonOnClick, ...props }) => {
+	return (
+		<div {...props} className={clsx("absolute left-0 z-10", props.className)}>
+			<button
+				type="button"
+				title="Previous"
+				onClick={buttonOnClick}
+				className="absolute left-0 flex justify-center w-10 h-10 rounded-full bg-[#C93FDD] hover:bg-[#e74aff]"
+			>
+				<ChevronLeft size={40} className="relative right-[0.15rem]" color="white" />
+			</button>
+		</div>
+	);
+};
+
+export const NextArrow: React.FC<ArrowProps> = ({
+	buttonOnClick,
+	...props
+}) => {
+	return (
+		<div {...props} className={clsx("absolute z-10 right-0", props.className)}>
+			<button
+				type="button"
+				title="Next"
+				onClick={buttonOnClick}
+				className="absolute right-0 flex justify-center w-10 h-10 rounded-full bg-[#C93FDD] hover:bg-[#e74aff]"
+			>
+				<ChevronRight size={40} color="white" className="relative left-[0.15rem]" />
+			</button>
+		</div>
+	);
+};
 
 const JudgeItem = (props: JudgeInfo) => {
 	const { name, title, image_path } = props;
@@ -26,7 +66,9 @@ const JudgeItem = (props: JudgeInfo) => {
 export const JudgeSection = () => {
 	const settings = {
 		dots: true,
-		arrows: false,
+		prevArrow: <PreArrow />,
+		nextArrow: <NextArrow />,
+		// arrows: true,
 		infinite: true,
 		speed: 500,
 		slidesToShow: 3,

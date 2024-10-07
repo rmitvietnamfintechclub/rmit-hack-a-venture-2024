@@ -79,7 +79,7 @@ export const AboutClub = () => {
 				< div className='w-fit mx-auto mb-8' >
 					<h1 className='text-[#C93FDD] text-lg font-semibold font-sans'>Competition Organizer</h1>
 					<div className='flex flex-col lg:flex-row w-full justify-center items-center'>
-						<h2 className='md:text-6xl text-4xl max-md:text-left font-bold md:mr-[60px] max-md:mt-[10px] max-md:place-self-start'>FinTech Club<br />Who are we?</h2>
+						<h2 className='md:text-6xl text-4xl text-white max-md:text-left font-bold md:mr-[60px] max-md:mt-[10px] max-md:place-self-start'>FinTech Club<br />Who are we?</h2>
 						<p className='text-lg lg:max-w-3xl lg:mx-auto text-[#6B7280] w-full max-md:mt-[16px]'>
 							The RMIT FinTech Club is Vietnam's first <span className='font-bold text-white'>Student-Led Financial Technology Club.</span> Our mission is to provide a platform where students from diverse backgrounds can collaborate, innovate, and build solutions that <span className='font-bold text-white'>Connect Business And Technology.</span>
 						</p>
@@ -132,7 +132,7 @@ export const AboutClub = () => {
 					<span className="text-lg font-sans text-center text-[#9CA3AF]">Club Members</span>
 				</div>
 				<div className="flex flex-col items-center border-r-[1.5px] border-l-[1.5px] border-[#582768] md:px-[134px] md:py-[42px] max-md:px-[16px] max-md:justify-around max-md:h-full drop-shadow-container">
-					<span className="text-gradient md:text-6xl text-3xl font-semibold font-sans drop-shadow-text">
+					<span className="text-gradient text-white md:text-6xl text-3xl font-semibold font-sans drop-shadow-text">
 						<CountUp start={0} end={inView ? 20 : 0} duration={5}>
 							{({ countUpRef }) => (
 								<span ref={countUpRef} />
@@ -164,7 +164,7 @@ export const AboutClub = () => {
 					<span className="text-lg font-sans text-center text-[#9CA3AF]">Best Club Of Semester</span>
 				</div>
 				<div className="flex flex-col items-center border-r-[1.5px] border-l-[1.5px] border-[#582768] md:px-[100px] md:py-[42px] max-md:px-[16px] justify-around h-full drop-shadow-container">
-					<span className="text-gradient md:text-6xl text-3xl font-semibold font-sans drop-shadow-text">
+					<span className="text-gradient text-white md:text-6xl text-3xl font-semibold font-sans drop-shadow-text">
 						<CountUp start={0} end={inView ? 300 : 0} duration={5}>
 							{({ countUpRef }) => (
 								<span ref={countUpRef} />

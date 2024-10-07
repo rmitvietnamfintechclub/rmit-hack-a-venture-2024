@@ -73,7 +73,7 @@ export const WhoSection = () => {
 									width={4000}
 									height={4000}
 								/>
-								<div className='text-center font-sans font-semibold md:text-2xl max-md:text-lg md:mt-[24px] max-md:mt-[16px]'>
+								<div className='text-center font-sans font-semibold md:text-xl max-md:text-lg md:mt-[24px] max-md:mt-[16px]'>
 									<p dangerouslySetInnerHTML={{ __html: whoSection[index] }}></p>
 								</div>
 							</motion.div>

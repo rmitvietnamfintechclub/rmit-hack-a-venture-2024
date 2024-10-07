@@ -41,7 +41,7 @@ export const HeroSection = () => {
 								}}
 							>
 
-								<div className='text-gradient text-6xl font-bold drop-shadow-text'>
+								<div className='text-gradient text-white text-6xl font-bold drop-shadow-text'>
 									<FlipText>Hack-A-Venture</FlipText>
 								</div>
 							</motion.h1>
@@ -63,7 +63,7 @@ export const HeroSection = () => {
 							</button>
 
 							<button
-								className='w-[130px] h-[48px] bg-[#C93FDD] rounded-[12px] justify-items-center flex justify-center items-center hover:text-xl text-bold ease-in transition-all duration-200 font-semibold font-poppins'
+								className='w-[130px] h-[48px] bg-[#C93FDD] rounded-[12px] justify-items-center flex justify-center items-center hover:text-xl text-bold text-white ease-in transition-all duration-200 font-semibold font-poppins'
 							>
 								{/* <Button /> */}
 								<a href="https://docs.google.com/forms/d/1azQmLTEt04oDg3TwJyTmQ-wbzgxiPLibbaQdSiTHtVU/viewform?edit_requested=true" target="_blank">Join Now</a>

@@ -21,6 +21,16 @@ export const MentorSection = () => {
                     <h3 className="md:text-2xl max-md:text-xl font-semibold mb-2">Mr. Tin Nguyen</h3>
                     <p className="md:text-base max-md:text-md text-[#9CA3AF]">Cybersecurity Mentor - Director of Automotive, VinCSS</p>
                 </div>
+                <div className="md:w-[250px] max-md:py-[16px] text-center">
+                    <Image src="/mentors/Louis_Nguyen.png" alt="Mr. Louis Nguyen" className="w-full h-auto rounded-xl mb-4 object-cover" width={200} height={200} />
+                    <h3 className="md:text-2xl max-md:text-xl font-semibold mb-2">Mr. Louis Nguyen</h3>
+                    <p className="md:text-base max-md:text-md text-[#9CA3AF]">Community Manager, ChainLink</p>
+                </div>
+                <div className="md:w-[250px] max-md:py-[16px] text-center">
+                    <Image src="/mentors/Sang_Tran.png" alt="Mr. Sang Tran" className="w-full h-auto rounded-xl mb-4 object-cover" width={200} height={200} />
+                    <h3 className="md:text-2xl max-md:text-xl font-semibold mb-2">Sang Tran</h3>
+                    <p className="md:text-base max-md:text-md text-[#9CA3AF]">Product Manager, FireGroup Technology</p>
+                </div>
             </div>
         </div>
     )

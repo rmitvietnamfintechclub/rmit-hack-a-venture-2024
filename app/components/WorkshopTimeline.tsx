@@ -1,5 +1,7 @@
 'use client'
-import React, { FC } from "react";
+import React, { FC, useEffect } from "react";
+import { motion, useAnimation } from 'framer-motion'
+import { useInView } from "react-intersection-observer";
 
 export const WorkshopTimeline = () => {
 	return (
@@ -155,6 +157,29 @@ const DetailTimeLine: React.FC<{
 	paragraph,
 	dashLineColor,
 }) => {
+		const { ref, inView } = useInView({
+			triggerOnce: true,
+			threshold: 0.2
+		});
+
+		const controls = useAnimation();
+
+		useEffect(() => {
+			if (inView) {
+				controls.start('visible');
+			}
+		}, [controls, inView]);
+
+		const leftSlideVariants = {
+			hidden: { opacity: 0, x: 1000 },
+			visible: { opacity: 1, x: 0 }
+		}
+
+		const rightSlideVariants = {
+			hidden: { opacity: 0, x: -1000 },
+			visible: { opacity: 1, x: 0 }
+		}
+
 		return (
 			<>
 				{/*----------- laptop version ---------*/}
@@ -169,19 +194,27 @@ const DetailTimeLine: React.FC<{
 						/>
 					</div>
 					{/*---------- dashline and textSection ------*/}
-					<div
-						className={`absolute ${rightSideOfTextSection ? "-right-[85px]" : "-left-[85px]"
-							} ${rounded ? "top-[40px]" : "top-[25px]"} flex ${!rightSideOfTextSection && "flex-row-reverse"
-							} items-start w-[49%]`}
+					<motion.div
+						ref={ref}
+						initial="hidden"
+						animate={controls}
+						variants={rightSideOfTextSection ? leftSlideVariants : rightSlideVariants}
+						transition={{ duration: 1.3, delay: 0.5 }}
 					>
-						<DashLine rightSide={rightSideOfTextSection} />
-						<TextSection
-							textAlign={rightSideOfTextSection ? "right" : "left"}
-							headLine={headline}
-							subHeadline={subHeadline}
-							paragraph={paragraph}
-						/>
-					</div>
+						<div
+							className={`absolute ${rightSideOfTextSection ? "-right-[85px]" : "-left-[85px]"
+								} ${rounded ? "top-[40px]" : "top-[25px]"} flex ${!rightSideOfTextSection && "flex-row-reverse"
+								} items-start w-[49%]`}
+						>
+							<DashLine rightSide={rightSideOfTextSection} />
+							<TextSection
+								textAlign={rightSideOfTextSection ? "right" : "left"}
+								headLine={headline}
+								subHeadline={subHeadline}
+								paragraph={paragraph}
+							/>
+						</div>
+					</motion.div>
 				</section>
 
 				{/*----------- mobile version ---------*/}

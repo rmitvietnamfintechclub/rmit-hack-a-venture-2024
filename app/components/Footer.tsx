@@ -83,19 +83,19 @@ const OrganizerList = () => {
 					<img
 						className="w-[60px] h-[60px]"
 						src="/alignVerticalLogo.svg"
-						alt="fintech logo"
+						alt="FinTech Club Logo"
 					/>
 					<h2 className="text-[18px] text-white">RMIT Vietnam Fintech Club</h2>
 				</div>
 
-				{/* <div className="flex gap-[15px] items-center">
+				<div className="flex gap-[15px] items-center">
 					<img
 						className="w-[60px] h-[60px]"
-						src="/alignVerticalLogo.svg"
-						alt="fintech logo"
+						src="/student_life.png"
+						alt="Student Life Logo"
 					/>
-					<h2 className="text-[18px] text-white">ChainLink</h2>
-				</div> */}
+					<h2 className="text-[18px] text-white">RMIT Student Club Program</h2>
+				</div>
 			</div>
 		</div>
 	);

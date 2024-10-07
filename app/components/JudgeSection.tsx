@@ -15,7 +15,7 @@ interface JudgeInfo {
 const JudgeItem = (props: JudgeInfo) => {
 	const { name, title, image_path } = props;
 	return (
-		<div className="flex flex-col md:w-[250px] max-md:py-[16px] max-md:w-full text-center">
+		<div className="flex flex-col md:w-[250px] max-md:py-[16px] max-md:px-[24px] max-md:w-full text-center">
 			<Image src={`/judges/${image_path}`} alt={name} className="w-full h-auto rounded-xl mb-4 object-cover" width={200} height={200} />
 			<h3 className="md:text-2xl max-md:text-xl font-semibold mb-2 text-white">{name}</h3>
 			<p className="md:text-base max-md:text-md text-[#9CA3AF]">{title}</p>
@@ -51,7 +51,7 @@ export const JudgeSection = () => {
 		{
 			name: "Mr. Nghiem Sy Phu",
 			title: "Senior Cyber Security Manager, Fossil Group",
-			image_path: "Phu_Nghiem.png"
+			image_path: "Phu_Nghiem1.png"
 		},
 		{
 			name: "Mr. William Ross",

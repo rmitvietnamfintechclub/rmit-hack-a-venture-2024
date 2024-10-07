@@ -17,7 +17,7 @@ export const MentorSection = () => {
                     <p className="md:text-base max-md:text-md text-[#9CA3AF]">UI/UX Mentor - Design Consultant & Coordinator, GFT Grou</p>
                 </div>
                 <div className="md:w-[250px] max-md:py-[16px] text-center">
-                    <Image src="/mentors/Tin_Nguyen.png" alt="Mr. Tin Nguyen" className="w-full h-auto rounded-xl mb-4 object-cover" width={200} height={200} />
+                    <Image src="/mentors/TinNguyen.png" alt="Mr. Tin Nguyen" className="w-full h-auto rounded-xl mb-4 object-cover" width={200} height={200} />
                     <h3 className="md:text-2xl max-md:text-xl font-semibold mb-2">Mr. Tin Nguyen</h3>
                     <p className="md:text-base max-md:text-md text-[#9CA3AF]">Cybersecurity Mentor - Director of Automotive, VinCSS</p>
                 </div>

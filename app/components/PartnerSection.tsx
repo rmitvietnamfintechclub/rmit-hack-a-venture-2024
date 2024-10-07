@@ -8,7 +8,7 @@ import "../css/PartnerSection.css";
 
 export const PartnerSection = () => {
   return (
-    <div className="bg-black text-center mb-5">
+    <div className="bg-black text-center mb-5" id="hackaventure-sponsors">
       <h1
         className={`text-[45px] lg:text-[57px] text-center text-white font-semibold md:px-[40px] max-md:mt-[48px] drop-shadow-text`}
       >

@@ -53,7 +53,7 @@ export const ThemeSection = () => {
 				<div className='md:col-span-5 object-cover h-full max-md:hidden'>
 					<Image
 						className='justify-self-end object-cover'
-						src='/theme.png'
+						src='/theme.webp'
 						alt='theme'
 						width={1000}
 						height={1000}

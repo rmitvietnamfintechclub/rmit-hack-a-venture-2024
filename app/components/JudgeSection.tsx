@@ -54,6 +54,11 @@ export const JudgeSection = () => {
 			image_path: "Phu_Nghiem.png"
 		},
 		{
+			name: "Mr. William Ross",
+			title: "CFA, Chief Marketing & Distribution Officer, Dragon Capital",
+			image_path: "Will_Ross.png"
+		},
+		{
 			name: "Dr. Huy Pham",
 			title: "Lecturer, Finance, RMIT Vietnam",
 			image_path: "Huy_Pham.png"

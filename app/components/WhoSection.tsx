@@ -30,7 +30,7 @@ export const WhoSection = () => {
 
 
 
-	const whoSection = ['University Students <br/> Passionate About <br/> Tech  & Business', 'Business-Related Majors', 'Technology-related majors', 'Finance-related majors', 'Marketing-related majors']
+	const whoSection = ['University Students in Vietnam', 'Business-Related Majors', 'Technology-related majors', 'Finance-related majors', 'Marketing-related majors']
 
 	return (
 		<div

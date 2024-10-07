@@ -8,6 +8,7 @@ import { HeroSection } from "./components/HeroSection";
 import { JudgeSection } from "./components/JudgeSection";
 import { MentorSection } from "./components/MentorSection";
 import { PrizeSection } from "./components/PrizeSection";
+import { SponsoredPrizeSection } from "./components/SponsoredPrizeSection";
 import { ThemeSection } from "./components/ThemeSection";
 import { WhoSection } from "./components/WhoSection";
 import { WorkshopTimeline } from "./components/WorkshopTimeline";
@@ -25,6 +26,7 @@ export default function Home() {
 			<ThemeSection />
 			<WorkshopTimeline />
 			<PrizeSection />
+			<SponsoredPrizeSection />
 			<JudgeSection />
 			<MentorSection />
 			<Footer />

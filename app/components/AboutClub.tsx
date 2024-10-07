@@ -74,14 +74,14 @@ export const AboutClub = () => {
 				background: "linear-gradient(0deg, #000000 0%, #111827 42%, #000000 100%)"
 			}}
 		>
-			<div className='px-[16px]' >
+			<div className='px-[16px] mt-[100px]' >
 				{/* Text Section */}
 				< div className='w-fit mx-auto mb-8' >
 					<h1 className='text-[#C93FDD] text-lg font-semibold font-sans'>Competition Organizer</h1>
 					<div className='flex flex-col lg:flex-row w-full justify-center items-center'>
 						<h2 className='md:text-6xl text-4xl text-white max-md:text-left font-bold md:mr-[60px] max-md:mt-[10px] max-md:place-self-start'>FinTech Club<br />Who are we?</h2>
-						<p className='text-lg lg:max-w-3xl lg:mx-auto text-[#6B7280] w-full max-md:mt-[16px]'>
-							The RMIT FinTech Club is Vietnam's first <span className='font-bold text-white'>Student-Led Financial Technology Club.</span> Our mission is to provide a platform where students from diverse backgrounds can collaborate, innovate, and build solutions that <span className='font-bold text-white'>Connect Business And Technology.</span>
+						<p className='text-lg lg:max-w-3xl lg:mx-auto text-white w-full max-md:mt-[16px]'>
+							The RMIT FinTech Club is Vietnam's first <span className='font-bold text-[#C93FDD]'>Student-Led Financial Technology Club.</span> Our mission is to provide a platform where students from diverse backgrounds can collaborate, innovate, and build solutions that <span className='font-bold text-[#C93FDD]'>Connect Business And Technology.</span>
 						</p>
 					</div>
 				</div >

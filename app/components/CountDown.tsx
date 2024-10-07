@@ -272,5 +272,14 @@ const renderer: CountdownRendererFn = ({
 };
 
 export const Countdown = ({ date }: Pick<CountdownProps, "date">) => {
-    return <ReactCountdown date={date} renderer={renderer} />;
+    return (
+        <div className="my-[104px]">
+            <h1
+                className={`text-[45px] lg:text-[57px] text-center text-white font-semibold md:px-[40px] max-md:mt-[48px] drop-shadow-text`}
+            >
+                Countdown before registration closed
+            </h1>
+            <ReactCountdown date={date} renderer={renderer} />
+        </div>
+    );
 };

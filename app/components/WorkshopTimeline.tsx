@@ -42,7 +42,7 @@ const RoundFormatTimeline = () => {
 				dashLineColor="#000000 0%, #0EA2FF 47%, #000000 100%"
 				headline="IDEA PROPOSAL"
 				subHeadline=""
-				paragraph="Teams will submit a written proposal that outlines the problem they wish to solve and how they plan to address it using AI, Blockchain, or Cybersecurity. This round focuses on creative thinking and solution ideation."
+				paragraph="Teams will submit a written proposal, outlining problem, solution and impact. Teams must identify the problem in the SDG in Vietnam they wish to solve, their product/solution proposal and how they plan to leverage AI, Blockchain, and Cybersecurity, and its potential impact on the chosen SDG. Teams must choose from 1 of 3 SDGs chosen by Organizing Committee, revealed at start of Round 01."
 			/>
 
 			<DetailTimeLine
@@ -53,7 +53,7 @@ const RoundFormatTimeline = () => {
 				headline="BUSINESS & TECHNICAL DOCUMENTATION"
 				dashLineColor="#000000 0%, #10D8D8 47%, #000000 100%"
 				subHeadline=""
-				paragraph="Teams will develop detailed business and technical documentation to support their idea. This includes business models, market analysis, and technical frameworks. Teams will also submit a video presentation of their solution."
+				paragraph="Teams will develop a detailed business and technology documentation, using specific frameworks which will be released in Round 02. These may include things like business strategies, or systems architectures. Teams have to compose their documentation into a slide format, and submit a video presentation. These videos will be eligible for the People's Choice Award."
 			/>
 
 			<DetailTimeLine
@@ -64,7 +64,7 @@ const RoundFormatTimeline = () => {
 				headline="HACK DAY"
 				subHeadline="(Prototype & Presentation)"
 				dashLineColor="#000000 0%, #22E29A 47%, #000000 100%"
-				paragraph="On Hack Day, teams will build and present a working prototype of their solution, followed by a live pitch to the judging panel. This round tests the feasibility, impact, and scalability of the solution."
+				paragraph="On HackDay, teams will develop and present a working prototype of their solution, followed by a live demo pitch to the industry panel of judges. This round tests the feasibility, impact, and marketability of the solution. This round will be done offline, at a Venue in HCMC which will be updated later."
 			/>
 		</section>
 	);
@@ -111,15 +111,15 @@ const TrainingWorkshopTimeline = () => {
 				subHeadline="UI/UX Design and Pitching Techniques"
 				paragraph="This session will help participants create user-friendly designs and develop compelling presentations for their final pitch."
 			/>
-      	<DetailTimeLine
+			<DetailTimeLine
 				rounded={false}
 				numberOfOrder={4}
 				rightSideOfTextSection={false}
 				timeRangeText="Date TBA"
 				dashLineColor="#000000 0%, #22E29A 47%, #000000 100%"
 				headline="WORKSHOP 04"
-				subHeadline="Loading..."
-				paragraph="The Hack-A-Venture Organizing Committee is exploring more Workshop opportunities, to add more value to participants. We aim to work further with our partners to develop this further!"
+				subHeadline="Technical Bootcamp"
+				paragraph="Teams will be trained by industry professionals on how to build AI, Blockchain or Cybersecurity based solutions, with case studies. This workshop is conducted between WS2 and WS3, but specific date will be announced later."
 			/>
 		</section>
 	);
@@ -263,11 +263,11 @@ const TimelineRange: React.FC<{
 	return (
 		<h3
 			className={` flex-shrink-0 w-[220px] text-center text-[16px] lg:text-[18px] font-semibold ${numberOfOrder == 1
-				? "text-[#0EA2FF]"
+				? "text-[#10D8D8]"
 				: numberOfOrder == 2
 					? "text-[#10D8D8]"
-					: numberOfOrder == 3 ? "text-[#22E29A]"
-					: numberOfOrder == 4 && "text-[#22E29A]"
+					: numberOfOrder == 3 ? "text-[#10D8D8]"
+						: numberOfOrder == 4 && "text-[#10D8D8]"
 				}`}
 		>
 			{timeRangeText}
@@ -287,8 +287,8 @@ const VerticalLine: React.FC<{ numberOfOrder: number; rounded: boolean }> = ({
 					? "#002840"
 					: numberOfOrder == 2
 						? "#023233"
-						: numberOfOrder == 3  ? "#012417"
-						: numberOfOrder == 4  && "#012417"
+						: numberOfOrder == 3 ? "#012417"
+							: numberOfOrder == 4 && "#012417"
 					}, transparent`,
 			}}
 		/>
@@ -343,7 +343,7 @@ const TextSection: React.FC<{
 				{subHeadline}
 			</h2>
 			<p
-				className={`text-[#9CA3AF] lg:text[24px] text-[18px] font-normal ${paragraph == "" && "hidden"
+				className={`text-white lg:text[24px] text-[18px] font-normal ${paragraph == "" && "hidden"
 					}`}
 			>
 				{paragraph}

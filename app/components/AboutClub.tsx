@@ -74,7 +74,7 @@ export const AboutClub = () => {
 				background: "linear-gradient(0deg, #000000 0%, #111827 42%, #000000 100%)"
 			}}
 		>
-			<div className='px-[16px]' >
+			<div className='px-[16px] mt-[100px]' >
 				{/* Text Section */}
 				< div className='w-fit mx-auto mb-8' >
 					<h1 className='text-[#C93FDD] text-lg font-semibold font-sans'>Competition Organizer</h1>

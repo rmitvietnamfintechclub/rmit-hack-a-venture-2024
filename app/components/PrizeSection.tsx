@@ -24,14 +24,14 @@ export const PrizeSection = () => {
 	}
 
 	return (
-		<div className="text-white flex flex-col items-center justify-center md:mt-[120px] max-md:px-[16px] max-md:my-[68px]">
+		<div className="text-white flex flex-col items-center justify-center md:mt-[120px] max-md:px-[16px] max-md:my-[68px] text-center">
 			<motion.div
 				animate={controls}
 				initial="hidden"
 				variants={variants}
 				transition={{ duration: 1.3, delay: 0.2 }}
 			>
-				<span ref={ref} className="max-md:text-5xl text-6xl font-bold md:mt-[51px] text-center">Hack-A-Venture <span className='text-[#C93FDD]'>Prizes</span></span>
+				<span ref={ref} className="text-[45px] lg:text-[57px] text-center text-white font-semibold md:px-[40px] max-md:mt-[48px] drop-shadow-text">Hack-A-Venture <span className='text-[#C93FDD]'>Prizes</span></span>
 			</motion.div>
 			<div className='md:flex md:flex-wrap md:gap-48 text-[#FBF6FD] max-md:grid max-md:grid-cols-2 md:mx-auto max-md:px-[60px] justify-center items-center max-md:gap-x-[40px] md:mt-[80px] max-md:w-full max-md:mt-[24px]'>
 				<div className="max-md:py-[16px] text-center md:col-span-1 max-md:hidden">
@@ -90,7 +90,7 @@ export const PrizeSection = () => {
 
 			<Image src="/Rectangle.png" alt="light" className="light-effect" width={726.1} height={68.34} />
 
-			<h1 className="max-md:text-3xl text-6xl font-bold md:mt-[120px] max-md:mt-[48px] text-center">Special Category Awards</h1>
+			<h1 className="mt-[100px] text-[45px] lg:text-[57px] text-center text-white font-semibold md:px-[40px] max-md:mt-[48px] drop-shadow-text">Special Category Awards</h1>
 			<div className='md:flex md:flex-wrap md:gap-48 text-[#FBF6FD] max-md:grid max-md:grid-cols-2 md:mx-auto justify-center items-center max-md:gap-[12px] md:mt-[80px] max-md:w-full max-md:mt-[24px]'>
 				<motion.div
 					animate={controls}

@@ -125,8 +125,9 @@ export const JudgeSection = () => {
 				style={{
 					background: "linear-gradient(0deg, #000000 0%, #111827 42%, #000000 100%)"
 				}}
+				className="mt-[100px]"
 			>
-				<h1 className="md:text-6xl max-md:text-4xl font-bold md:mb-[60px] md:mt-[160px] max-md:px-[16px] text-center text-white font-sans">Hack-A-Venture <span className="text-purple-500">Judges</span></h1>
+				<h1 className="text-[45px] lg:text-[57px] text-center text-white font-semibold md:px-[40px] max-md:mt-[48px] drop-shadow-text">Hack-A-Venture <span className="text-[#C93FDD]">Judges</span></h1>
 				<div className="slider-container mx-auto w-[80vw]">
 					<Slider {...settings}>
 						{judges.map((judge, key) => <JudgeItem key={key} name={judge.name} title={judge.title} image_path={judge.image_path} />)}

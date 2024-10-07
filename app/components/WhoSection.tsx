@@ -24,7 +24,7 @@ export const WhoSection = () => {
 	}
 
 	const slideVariants = {
-		hidden: { opacity: 0, x: 1000 },
+		hidden: { opacity: 0, x: -300 },
 		visible: { opacity: 1, x: 0 }
 	}
 
@@ -41,7 +41,7 @@ export const WhoSection = () => {
 				<motion.div
 					initial='hidden'
 					animate={controls}
-					variants={swipeVariants}
+					variants={slideVariants}
 					transition={{ duration: 1.3, delay: 0.5 }}
 					className='text-[#C93FDD] inline-block'>
 					Who can join&nbsp;
@@ -49,7 +49,7 @@ export const WhoSection = () => {
 				<motion.div
 					initial='hidden'
 					animate={controls}
-					variants={slideVariants}
+					variants={swipeVariants}
 					transition={{ duration: 1.3, delay: 0.5 }}
 					className='inline-block'
 				>

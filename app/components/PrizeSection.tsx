@@ -24,7 +24,7 @@ export const PrizeSection = () => {
 	}
 
 	return (
-		<div className="text-white flex flex-col items-center justify-center md:mt-[120px] max-md:px-[16px] max-md:my-[68px]">
+		<div className="text-white text-center flex flex-col items-center justify-center md:mt-[120px] max-md:px-[16px] max-md:my-[68px]">
 			<motion.div
 				animate={controls}
 				initial="hidden"

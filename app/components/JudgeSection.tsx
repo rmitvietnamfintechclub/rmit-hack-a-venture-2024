@@ -29,7 +29,7 @@ export const JudgeSection = () => {
 		arrows: false,
 		infinite: true,
 		speed: 500,
-		slidesToShow: 5,
+		slidesToShow: 3,
 		initialSlide: 0,
 		slidesToScroll: 1,
 		responsive: [

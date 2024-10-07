@@ -34,22 +34,22 @@ export const SponsoredPrizeSection = () => {
 			initial="hidden"
 			variants={variants}
 			transition={{ duration: 1.3, delay: 0.5 }}
-			className='w-full md:px-[10vw] '
+			className='w-full md:px-[10vw]'
 			ref={ref}
 		>
-			<h1 className="mt-[100px] max-md:text-4xl md:text-6xl text-center text-white font-semibold md:px-[40px] max-md:mt-[60px] drop-shadow-text">Special Category Awards</h1>
-			<div className='md:grid md:grid-cols-2 text-[#FBF6FD] max-md:grid max-md:grid-cols-1 md:mx-auto justify-center items-start max-md:gap-[12px] md:mt-[10px] max-md:w-full max-md:mt-[24px]'>
+			<h1 className="my-[100px] max-md:text-4xl md:text-6xl text-center text-white font-semibold md:px-[40px] max-md:my-[60px] max-md:mb-[20px] drop-shadow-text">Special Category Awards</h1>
+			<div className='md:grid md:grid-cols-2 text-[#FBF6FD] max-md:grid max-md:grid-cols-1 md:mx-auto justify-center items-start max-md:gap-[12px] md:mt-[10px] max-md:w-full max-md:mt-[24px] content-start'>
 				<div className="text-center md:col-span-1">
-					<Image src="/partners/polkadot.png" alt="Polkadot" className="md:w-[200px] max-md:h-[150px] max-md:scale-75 rounded-xl mb-4 object-contain mx-auto items-start" width={200} height={200} />
+					<Image src="/partners/polkadot.png" alt="Polkadot" className="md:w-[200px] max-md:h-[150px] max-md:scale-75 rounded-xl mb-4 object-contain mx-auto justify-start items-start" width={200} height={200} />
 					<div className='drop-shadow-container'>
 						<h3 className="md:text-3xl max-md:text-2xl font-semibold mb-2 drop-shadow-text">Most Creative Business Model <br /> Built on Polkadot Blockchain</h3>
 					</div>
 				</div>
 
 				<div className="text-center md:col-span-1">
-					<Image src="/partners/monad.png" alt="Monad" className="md:w-[200px] max-md:h-[150px] max-md:scale-75 rounded-xl mb-4 object-contain mx-auto items-start " width={200} height={200} />
+					<Image src="/partners/monad.png" alt="Monad" className="md:w-[200px] max-md:h-[150px] max-md:scale-75 rounded-xl mb-4 object-contain mx-auto items-start mt-[10px]" width={200} height={200} />
 					<div className='drop-shadow-container'>
-						<h3 className="md:text-3xl max-md:text-2xl font-semibold mb-2 drop-shadow-text">Best Monad-based Blockchain Solution</h3>
+						<h3 className="md:text-3xl max-md:text-2xl font-semibold mb-2 drop-shadow-text">Best Monad-based <br /> Blockchain Solution</h3>
 					</div>
 				</div>
 

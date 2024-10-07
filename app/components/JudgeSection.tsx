@@ -133,7 +133,7 @@ export const JudgeSection = () => {
 				className="mt-[100px]"
 			>
 				<h1 className="text-[45px] lg:text-[57px] text-center text-white font-semibold md:px-[40px] max-md:mt-[48px] drop-shadow-text">Hack-A-Venture <span className="text-[#C93FDD]">Judges</span></h1>
-				<div className="slider-container mx-auto w-[80vw]">
+				<div className="slider-container mx-auto w-[80vw] md:mt-[40px]">
 					<Slider {...settings}>
 						{judges.map((judge, key) => <JudgeItem key={key} name={judge.name} title={judge.title} image_path={judge.image_path} />)}
 					</Slider>

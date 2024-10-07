@@ -196,7 +196,7 @@ export const AboutClub = () => {
 					<h1 className="max-md:hidden md:text-6xl text-3xl font-bold font-sans text-center md:mb-[48px] bg-gradient-to-r from-white via-white to-transparent text-clip"
 						style={{
 							backgroundSize: '85%',
-							backgroundPosition: 'right 400px top 0px'
+							backgroundPosition: 'right 170px top 0px'
 						}}
 					>
 						Our previous activities

@@ -105,7 +105,7 @@ export const PrizeSection = () => {
 			</motion.div>
 
 			<h1 className="mt-[100px] text-[45px] lg:text-[57px] text-center text-white font-semibold md:px-[40px] max-md:mt-[48px] drop-shadow-text">Special Category Awards</h1>
-			<div className='md:flex md:flex-wrap md:gap-48 text-[#FBF6FD] max-md:grid max-md:grid-cols-2 md:mx-auto justify-center items-center max-md:gap-[12px] md:mt-[80px] max-md:w-full max-md:mt-[24px]'>
+			<div className='md:flex md:flex-nowrap text-[#FBF6FD] max-md:grid max-md:grid-cols-1 md:mx-auto justify-center items-center max-md:gap-[12px] md:mt-[80px] max-md:w-full max-md:mt-[24px]'>
 				<motion.div
 					animate={controls}
 					initial="hidden"

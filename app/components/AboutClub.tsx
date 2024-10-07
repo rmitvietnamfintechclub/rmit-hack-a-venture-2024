@@ -111,7 +111,7 @@ export const AboutClub = () => {
 							<Image
 								className="rounded-lg"
 								src="/about_ftc_3.png"
-								alt="About FinTech Club 1"
+								alt="About FinTech Club 3"
 								width={4000}
 								height={4000}
 							/>
@@ -251,10 +251,11 @@ export const AboutClub = () => {
 						transition={{ duration: 1.3, delay: 1.1 }}
 					>
 						<Image
-							src="/activities_3.png"
+							src="/clubactivities_3.png"
 							alt="About FinTech Club 1"
 							width={4000}
 							height={4000}
+							className="rounded-md"
 						/>
 					</motion.div>
 					<motion.div
@@ -292,10 +293,11 @@ export const AboutClub = () => {
 						</div>
 						<div className="p-3 md:p-3">
 							<Image
-								src="/activities_3.png"
-								alt="About FinTech Club 1"
+								src="/clubactivities_3.png"
+								alt="About FinTech Club 3"
 								width={4000}
 								height={4000}
+								className="rounded-md"
 							/>
 						</div>
 						<div className="p-3 md:p-3">

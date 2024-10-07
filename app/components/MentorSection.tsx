@@ -4,7 +4,7 @@ import React from 'react'
 export const MentorSection = () => {
     return (
         <div className="text-white flex flex-col items-center justify-center md:mt-[120px] max-md:px-[16px] md:mb-[400px] max-md:my-[68px]">
-            <h1 className="text-[45px] lg:text-[57px] text-center text-white font-semibold md:px-[40px] max-md:mt-[48px] drop-shadow-text">Mentoring Teams</h1>
+            <h1 className="text-[45px] lg:text-[57px] text-center text-white font-semibold md:px-[40px] max-md:mt-[48px] drop-shadow-text">Team Mentors</h1>
             <div className='md:flex md:flex-wrap md:gap-5 text-white max-md:grid max-md:grid-cols-2 mx-auto justify-center items-start max-md:gap-[12px] md:mt-[40px]'>
                 <div className="md:w-[250px] max-md:py-[16px] text-center">
                     <Image src="/mentors/Long_Dang.png" alt="Mr. Long Dang" className="w-full h-auto rounded-xl mb-4 object-cover" width={200} height={200} />

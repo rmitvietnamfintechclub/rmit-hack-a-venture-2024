@@ -61,8 +61,8 @@ export const ThemeSection = () => {
 				</div>
 			</div>
 			<div className='md:mt-[105px] max-md:mt-[32px]'>
-				<span className='text-[#6B7280] text-xl font-normal font-sans'>
-					These technologies will be used to develop innovative solutions to address social challenges within Vietnam. The specific social issues related to <span className='text-[#FBF6FD]'>Sustainable Development Goals (SDGs)</span> will be revealed at the start of Round 1. Teams will be challenged to create solutions that are not only technologically sound but also practical and scalable in real-world scenarios.
+				<span className='text-white text-xl font-normal font-sans'>
+					These technologies will be used to develop innovative solutions to address social challenges within Vietnam. The specific social issues related to <span className='text-[#C93FDD] font-bold'>Sustainable Development Goals (SDGs)</span> will be revealed at the start of Round 1. Teams will be challenged to create solutions that are not only technologically sound but also practical and scalable in real-world scenarios.
 				</span>
 			</div>
 		</div>

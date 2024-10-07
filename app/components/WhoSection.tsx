@@ -68,7 +68,7 @@ export const WhoSection = () => {
 								transition={{ duration: 1.3, delay: 0.5 + index * 0.2 }}
 							>
 								<Image
-									src={`/who_section_${index + 1}.png`}
+									src={`/who_section_${index + 1}.webp`}
 									alt='who'
 									width={4000}
 									height={4000}

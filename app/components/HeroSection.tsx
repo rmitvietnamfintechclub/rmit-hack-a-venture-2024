@@ -52,8 +52,8 @@ export const HeroSection = () => {
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ delay: 0.5, duration: 0.5 }}
 						>
-							<div className='w-[551px] text-[#9CA3AF] font-normal font-sans'>
-								Organized by the RMIT FinTech Club, it’s a unique hackathon-style competition that brings together <span className='font-bold text-white'>Business</span> and <span className='font-bold text-white'>Technology</span> students to collaborate and develop innovative solutions for Vietnam's pressing social challenges.
+							<div className='w-[551px] text-white font-normal font-sans'>
+								Organized by the RMIT FinTech Club, it’s a unique hackathon-style competition that brings together <span className='font-bold text-[#C93FDD]'>Business</span> and <span className='font-bold text-[#C93FDD]'>Technology</span> students to collaborate and develop innovative solutions for Vietnam's pressing social challenges.
 							</div>
 						</motion.h1>
 

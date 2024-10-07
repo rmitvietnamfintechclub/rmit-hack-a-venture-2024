@@ -111,14 +111,14 @@ const TrainingWorkshopTimeline = () => {
 				subHeadline="UI/UX Design and Pitching Techniques"
 				paragraph="This session will help participants create user-friendly designs and develop compelling presentations for their final pitch."
 			/>
-      	<DetailTimeLine
+			<DetailTimeLine
 				rounded={false}
 				numberOfOrder={4}
 				rightSideOfTextSection={false}
 				timeRangeText="Date TBA"
 				dashLineColor="#000000 0%, #22E29A 47%, #000000 100%"
 				headline="WORKSHOP 04"
-				subHeadline="Loading..."
+				subHeadline="(To Be Updated)"
 				paragraph="The Hack-A-Venture Organizing Committee is exploring more Workshop opportunities, to add more value to participants. We aim to work further with our partners to develop this further!"
 			/>
 		</section>
@@ -267,7 +267,7 @@ const TimelineRange: React.FC<{
 				: numberOfOrder == 2
 					? "text-[#10D8D8]"
 					: numberOfOrder == 3 ? "text-[#22E29A]"
-					: numberOfOrder == 4 && "text-[#22E29A]"
+						: numberOfOrder == 4 && "text-[#22E29A]"
 				}`}
 		>
 			{timeRangeText}
@@ -287,8 +287,8 @@ const VerticalLine: React.FC<{ numberOfOrder: number; rounded: boolean }> = ({
 					? "#002840"
 					: numberOfOrder == 2
 						? "#023233"
-						: numberOfOrder == 3  ? "#012417"
-						: numberOfOrder == 4  && "#012417"
+						: numberOfOrder == 3 ? "#012417"
+							: numberOfOrder == 4 && "#012417"
 					}, transparent`,
 			}}
 		/>
@@ -343,7 +343,7 @@ const TextSection: React.FC<{
 				{subHeadline}
 			</h2>
 			<p
-				className={`text-[#9CA3AF] lg:text[24px] text-[18px] font-normal ${paragraph == "" && "hidden"
+				className={`text-white lg:text[24px] text-[18px] font-normal ${paragraph == "" && "hidden"
 					}`}
 			>
 				{paragraph}

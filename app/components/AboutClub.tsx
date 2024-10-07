@@ -6,12 +6,22 @@ import Image from "next/image";
 import '../css/AboutClub.css';
 import CountUp from "react-countup";
 import { useInView } from 'react-intersection-observer';
+import { motion, useAnimation } from 'framer-motion';
+import { useEffect } from "react";
 
 export const AboutClub = () => {
 	const { ref, inView } = useInView({
 		triggerOnce: true,
-		threshold: 0.5  // Adjust threshold as needed
+		threshold: 0.4
 	});
+
+	const controls = useAnimation();
+
+	useEffect(() => {
+		if (inView) {
+			controls.start('visible');
+		}
+	}, [controls, inView]);
 
 	const settings = {
 		dots: false,
@@ -51,6 +61,11 @@ export const AboutClub = () => {
 				}
 			}
 		]
+	};
+
+	const titleVariants = {
+		hidden: { opacity: 0, y: 140 },
+		visible: { opacity: 1, y: 0 },
 	};
 
 	return (
@@ -171,59 +186,94 @@ export const AboutClub = () => {
 			</div>
 
 			<div className="md:px-[10vw] max-md:px-[16px] md:mt-[80px]">
-				<h1 className="max-md:hidden md:text-6xl text-3xl font-bold font-sans text-center md:mb-[48px] bg-gradient-to-r from-white via-white to-transparent text-clip"
-					style={{ backgroundSize: '75%' }}
+				<motion.div
+					ref={ref}
+					initial="hidden"
+					animate={controls}
+					variants={titleVariants}
+					transition={{ duration: 1.3 }}
 				>
-					Our previous activities
-				</h1>
+					<h1 className="max-md:hidden md:text-6xl text-3xl font-bold font-sans text-center md:mb-[48px] bg-gradient-to-r from-white via-white to-transparent text-clip"
+						style={{
+							backgroundSize: '85%',
+							backgroundPosition: 'right 400px top 0px'
+						}}
+					>
+						Our previous activities
+					</h1>
 
-				<h1 className="md:hidden md:text-6xl text-3xl font-bold font-sans text-center md:mb-[48px] max-md:mt-[40px] max-md:mb-[24px]"
-					style={{
-						background: `linear-gradient(to right, transparent, #ffffff 0%, #9CA3AF 50%, transparent)`,
-						backgroundRepeat: 'no-repeat',
-						WebkitBackgroundClip: 'text',
-						WebkitTextFillColor: 'transparent',
-					}}
-				>
-					Our previous activities
-				</h1>
+					<h1 className="md:hidden md:text-6xl text-3xl font-bold font-sans text-center md:mb-[48px] max-md:mt-[40px] max-md:mb-[24px]"
+						style={{
+							background: `linear-gradient(to right, transparent, #ffffff 0%, #9CA3AF 50%, transparent)`,
+							backgroundRepeat: 'no-repeat',
+							WebkitBackgroundClip: 'text',
+							WebkitTextFillColor: 'transparent',
+						}}
+					>
+						Our previous activities
+					</h1>
+				</motion.div>
+
 				<div className="grid grid-cols-2 grid-flow-row gap-4 max-md:hidden">
-					<div>
+					<motion.div
+						initial="hidden"
+						animate={controls}
+						variants={titleVariants}
+						transition={{
+							duration: 1.3,
+							delay: 0.5,
+						}}
+					>
 						<Image
 							src="/activities_1.png"
 							alt="About FinTech Club 1"
 							width={4000}
 							height={4000}
 						/>
-					</div>
-					<div>
+					</motion.div>
+					<motion.div
+						initial="hidden"
+						animate={controls}
+						variants={titleVariants}
+						transition={{ duration: 1.3, delay: 0.8 }}
+					>
 						<Image
 							src="/activities_2.png"
 							alt="About FinTech Club 1"
 							width={4000}
 							height={4000}
 						/>
-					</div>
-					<div>
+					</motion.div>
+					<motion.div
+						initial="hidden"
+						animate={controls}
+						variants={titleVariants}
+						transition={{ duration: 1.3, delay: 1.1 }}
+					>
 						<Image
 							src="/activities_3.png"
 							alt="About FinTech Club 1"
 							width={4000}
 							height={4000}
 						/>
-					</div>
-					<div>
+					</motion.div>
+					<motion.div
+						initial="hidden"
+						animate={controls}
+						variants={titleVariants}
+						transition={{ duration: 1.3, delay: 1.4 }}
+					>
 						<Image
 							src="/activities_4.png"
 							alt="About FinTech Club 1"
 							width={4000}
 							height={4000}
 						/>
-					</div>
+					</motion.div>
 				</div>
 				{/* Image Section */}
 				<div className="slider-container w-full justify-center items-center md:hidden">
-					<Slider {...activitiesSettings} className="center">
+					<Slider {...activitiesSettings} className="center  max-md:h-[170px]">
 						<div className="p-3 md:p-3">
 							<Image
 								src="/activities_1.png"

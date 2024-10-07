@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import '../css/HeroSection.css'
 import { motion } from 'framer-motion'
+import Button from './Button'
 
 const DURATION = 0.15;
 const STAGGER = 0.015;
@@ -14,7 +15,6 @@ export const HeroSection = () => {
 				<div className='justify-center mx-auto md:w-full'>
 					<div className="mx-auto">
 						<div className='mb-[16px] drop-shadow-container'>
-
 							<motion.h1
 								initial="initial"
 								whileHover="hovered"
@@ -65,6 +65,7 @@ export const HeroSection = () => {
 							<button
 								className='w-[130px] h-[48px] bg-[#C93FDD] rounded-[12px] justify-items-center flex justify-center items-center hover:text-xl text-bold ease-in transition-all duration-200 font-semibold font-poppins'
 							>
+								{/* <Button /> */}
 								<a href="https://docs.google.com/forms/d/1azQmLTEt04oDg3TwJyTmQ-wbzgxiPLibbaQdSiTHtVU/viewform?edit_requested=true" target="_blank">Join Now</a>
 								<Image
 									src={'/Vector.png'}

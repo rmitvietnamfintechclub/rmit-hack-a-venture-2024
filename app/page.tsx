@@ -1,5 +1,6 @@
 import { AboutClub } from "./components/AboutClub";
 import { AboutUsSection } from "./components/AboutUsSection";
+import { Countdown } from "./components/CountDown";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/header";
 import { HeroSection } from "./components/HeroSection";
@@ -16,6 +17,7 @@ export default function Home() {
 			<Header />
 			<HeroSection />
 			<AboutUsSection />
+			<Countdown date={new Date(2024, 10, 3)} />
 			<AboutClub />
 			<WhoSection />
 			<ThemeSection />

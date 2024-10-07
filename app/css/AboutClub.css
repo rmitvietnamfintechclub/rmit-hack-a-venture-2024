@@ -39,3 +39,7 @@
 .slick-slider::before {
 	content: none; /* Remove overlays if any */
 }
+/* 
+.slick-list{
+	max-height: 170px;
+} */

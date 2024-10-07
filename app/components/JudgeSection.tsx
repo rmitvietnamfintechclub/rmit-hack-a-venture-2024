@@ -17,7 +17,7 @@ const JudgeItem = (props: JudgeInfo) => {
 	return (
 		<div className="flex flex-col md:w-[250px] max-md:py-[16px] max-md:w-full text-center">
 			<Image src={`/judges/${image_path}`} alt={name} className="w-full h-auto rounded-xl mb-4 object-cover" width={200} height={200} />
-			<h3 className="md:text-2xl max-md:text-xl font-semibold mb-2">{name}</h3>
+			<h3 className="md:text-2xl max-md:text-xl font-semibold mb-2 text-white">{name}</h3>
 			<p className="md:text-base max-md:text-md text-[#9CA3AF]">{title}</p>
 		</div>
 	)
@@ -52,6 +52,11 @@ export const JudgeSection = () => {
 			name: "Mr. Nghiem Sy Phu",
 			title: "Senior Cyber Security Manager, Fossil Group",
 			image_path: "Phu_Nghiem.png"
+		},
+		{
+			name: "Mr. William Ross",
+			title: "CFA, Chief Marketing & Distribution Officer, Dragon Capital",
+			image_path: "Will_Ross.png"
 		},
 		{
 			name: "Dr. Huy Pham",
@@ -125,9 +130,10 @@ export const JudgeSection = () => {
 				style={{
 					background: "linear-gradient(0deg, #000000 0%, #111827 42%, #000000 100%)"
 				}}
+				className="mt-[20px]"
 			>
-				<h1 className="md:text-6xl max-md:text-4xl font-bold md:mb-[60px] md:mt-[160px] max-md:px-[16px] text-center text-white font-sans">Hack-A-Venture <span className="text-purple-500">Judges</span></h1>
-				<div className="slider-container mx-auto w-[80vw]">
+				<h1 className="max-md:text-4xl md:text-6xl text-center text-white font-semibold md:px-[40px] max-md:mb-[20px] drop-shadow-text">Hack-A-Venture <span className="text-[#C93FDD]">Judges</span></h1>
+				<div className="slider-container mx-auto w-[80vw] md:mt-[40px]">
 					<Slider {...settings}>
 						{judges.map((judge, key) => <JudgeItem key={key} name={judge.name} title={judge.title} image_path={judge.image_path} />)}
 					</Slider>

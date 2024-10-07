@@ -69,9 +69,9 @@ const StaticCard = ({
 
 export const MotionFlex = motion.create(
     Flex as ForwardRefExoticComponent<
-      MergeWithAs<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, any, FlexProps>
+        MergeWithAs<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, any, FlexProps>
     >
-  );
+);
 
 const UpperAnimatedCard = memo(
     ({
@@ -256,10 +256,8 @@ const renderer: CountdownRendererFn = ({
     if (completed) return null;
     return (
         <Center>
-            <HStack
-                align="center" spacing={50}
-            >
-                <div className="grid md:grid-cols-4 gap-5 max-md:grid-cols-2 md:mt-[30px] mt-[16px] max-md:px-[16px]">
+            <HStack>
+                <div className="grid md:grid-cols-4 gap-5 max-md:grid-cols-2 md:mt-[30px] max-md:mt-[40px] max-md:gap-x-[40px]">
 
                     <FlipContainer number={days} title="days" />
                     <FlipContainer number={hours} title="hours" />
@@ -272,5 +270,13 @@ const renderer: CountdownRendererFn = ({
 };
 
 export const Countdown = ({ date }: Pick<CountdownProps, "date">) => {
-    return <ReactCountdown date={date} renderer={renderer} />;
+    return (
+        <div className="md:mt-[100px]">
+            <h1 className={`max-md:text-4xl md:text-6xl text-center text-white font-semibold md:px-[40px] max-md:mt-[20px] drop-shadow-text`}
+            >
+                Countdown before registration closes
+            </h1>
+            <ReactCountdown date={date} renderer={renderer} />
+        </div>
+    );
 };

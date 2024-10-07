@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect, useRef, useState } from "react";
-import { motion} from "framer-motion"
+import { motion } from "framer-motion"
 import '../css/Header.css'
 
 export const Header = () => {
@@ -62,6 +62,7 @@ const LaptopNav = () => {
 					}}
 					onMouseEnter={() => setHoverItemNumber(3)}
 					onMouseLeave={() => setHoverItemNumber(-1)}
+					href="#hackaventure-sponsors"
 				>
 					<h1>Our Sponsors & Partners</h1>
 				</a>
@@ -245,7 +246,7 @@ const Navigation = ({ hamburgerBarIsActive }: { hamburgerBarIsActive: boolean })
 				>
 					<a
 						className={`hover:text-white text-[#9CA3AF] font-normal  cursor-pointer`}
-
+						href="#hackaventure-sponsors"
 					>
 						<h1>Our Sponsors & Partners</h1>
 					</a>

@@ -4,7 +4,7 @@ import '../css/HeroSection.css'
 
 export const ThemeSection = () => {
 	return (
-		<div className='md:px-[10vw] md:py-[80px] w-full max-md:px-[16px] max-md:pt-[56px]'>
+		<div className='md:px-[10vw] md:py-[80px] w-full max-md:px-[16px] max-md:pt-[40px]'>
 			<div className='md:grid md:grid-cols-10 w-full md:pt-[80px]'>
 				<div className='md:col-span-5 w-full h-full'>
 					<div className='drop-shadow-container'>
@@ -53,7 +53,7 @@ export const ThemeSection = () => {
 				<div className='md:col-span-5 object-cover h-full max-md:hidden'>
 					<Image
 						className='justify-self-end object-cover'
-						src='/theme.png'
+						src='/theme.webp'
 						alt='theme'
 						width={1000}
 						height={1000}
@@ -61,8 +61,8 @@ export const ThemeSection = () => {
 				</div>
 			</div>
 			<div className='md:mt-[105px] max-md:mt-[32px]'>
-				<span className='text-[#6B7280] text-xl font-normal font-sans'>
-					These technologies will be used to develop innovative solutions to address social challenges within Vietnam. The specific social issues related to <span className='text-[#FBF6FD]'>Sustainable Development Goals (SDGs)</span> will be revealed at the start of Round 1. Teams will be challenged to create solutions that are not only technologically sound but also practical and scalable in real-world scenarios.
+				<span className='text-white text-xl font-normal font-sans'>
+					These technologies will be used to develop innovative solutions to address social challenges within Vietnam. The specific social issues related to <span className='text-[#C93FDD] font-bold'>Sustainable Development Goals (SDGs)</span> will be revealed at the start of Round 1. Teams will be challenged to create solutions that are not only technologically sound but also practical and scalable in real-world scenarios.
 				</span>
 			</div>
 		</div>

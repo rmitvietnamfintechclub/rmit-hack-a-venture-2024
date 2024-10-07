@@ -30,20 +30,20 @@ export const WhoSection = () => {
 
 
 
-	const whoSection = ['University Students <br/> Passionate About <br/> Tech  & Business', 'Business-Related Majors', 'Technology-related majors', 'Finance-related majors', 'Marketing-related majors']
+	const whoSection = ['University Students in Vietnam', 'Business-Related Majors', 'Technology-related majors', 'Finance-related majors', 'Marketing-related majors']
 
 	return (
 		<div
-			className='md:px-[10vw] md:mt-[100px] max-md:mt-[56px]'
+			className='md:px-[10vw] md:mt-[100px] max-md:mt-[20px]'
 			ref={ref}
 		>
-			<div className='text-center max-md:px-[33px] font-sans font-semibold md:text-[57px] max-md:text-[40px] max-md:leading-[50px]'>
+			<div className='max-md:text-4xl md:text-6xl text-center text-white font-semibold md:px-[40px] max-md:mt-[40px] drop-shadow-text'>
 				<motion.div
 					initial='hidden'
 					animate={controls}
 					variants={slideVariants}
 					transition={{ duration: 1.3, delay: 0.5 }}
-					className='text-[#C93FDD] inline-block'>
+					className='text-gradient inline-block'>
 					Who can join&nbsp;
 				</motion.div>
 				<motion.div
@@ -68,12 +68,12 @@ export const WhoSection = () => {
 								transition={{ duration: 1.3, delay: 0.5 + index * 0.2 }}
 							>
 								<Image
-									src={`/who_section_${index + 1}.png`}
+									src={`/who_section_${index + 1}.webp`}
 									alt='who'
 									width={4000}
 									height={4000}
 								/>
-								<div className='text-center font-sans font-semibold md:text-xl max-md:text-lg md:mt-[24px] max-md:mt-[16px]'>
+								<div className='text-center text-white font-sans font-semibold md:text-xl max-md:text-lg md:mt-[24px] max-md:mt-[16px]'>
 									<p dangerouslySetInnerHTML={{ __html: whoSection[index] }}></p>
 								</div>
 							</motion.div>

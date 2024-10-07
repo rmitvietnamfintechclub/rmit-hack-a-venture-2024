@@ -52,14 +52,14 @@ export const HeroSection = () => {
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ delay: 0.5, duration: 0.5 }}
 						>
-							<div className='w-[551px] text-[#9CA3AF] font-normal font-sans'>
-								Organized by the RMIT FinTech Club, it’s a unique hackathon-style competition that brings together <span className='font-bold text-white'>Business</span> and <span className='font-bold text-white'>Technology</span> students to collaborate and develop innovative solutions for Vietnam's pressing social challenges.
+							<div className='w-[551px] text-white font-normal font-sans'>
+								Organized by RMIT Vietnam FinTech Club, Hack-A-Venture is a hackathon-style innovation competition for <span className='font-bold text-[#C93FDD]'>Business</span> and <span className='font-bold text-[#C93FDD]'>Technology</span> students nationwide, encouraging them to leverage technologies to solve Vietnam's pressing social challenge!
 							</div>
 						</motion.h1>
 
-						<div className='mt-[40px] flex w-[280px] justify-between'>
+						<div className='mt-[60px] flex w-[320px] justify-between'>
 							<button className='text-[#C93FDD] font-semibold text-md hover:underline hover:text-white'>
-								<a href="https://docs.google.com/document/d/1FGA7Ds3eAuEGMV6rF1yvot5bwMmflQaoPDTHylie4JA/edit" target="_blank" className="no-underline">See Handbook</a>
+								<a href="https://docs.google.com/document/d/1FGA7Ds3eAuEGMV6rF1yvot5bwMmflQaoPDTHylie4JA/edit" target="_blank" className="no-underline">See Public Handbook</a>
 							</button>
 
 							<button
@@ -92,7 +92,7 @@ export const HeroSection = () => {
 						alt='hero'
 						width={1000}
 						height={1000}
-						className=' my-7 w-[310px] h-[278px] mx-auto'
+						className=' my-7 w-auto h-[278px] mx-auto'
 					/>
 				</div>
 			</div>
@@ -108,12 +108,12 @@ export const HeroSection = () => {
 				</div>
 
 				<div className='text-[#9CA3AF] my-[16px] font-sans font-normal text-center mx-[16px] mt-[24px]'>
-					Organized by the RMIT FinTech Club, it’s a unique hackathon-style competition that brings together <span className='font-bold text-white'>Business</span> and <span className='font-bold text-white'>Technology</span> students to collaborate and develop innovative solutions for Vietnam's pressing social challenges.
+					Organized by RMIT Vietnam FinTech Club, Hack-A-Venture is a hackathon-style innovation competition for <span className='font-bold text-[#C93FDD]'>Business</span> and <span className='font-bold text-[#C93FDD]'>Technology</span> students nationwide, encouraging them to leverage technologies to solve Vietnam's pressing social challenge!
 				</div>
 
 				<div className='flex flex-col w-full gap-5 justify-center items-center px-[16px]'>
 					<button className='text-[#C93FDD] font-semibold text-md hover:underline hover:text-white'>
-						See Booklet
+						See Public Handbook
 					</button>
 
 					<button

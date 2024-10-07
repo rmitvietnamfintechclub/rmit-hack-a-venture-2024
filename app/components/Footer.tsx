@@ -13,7 +13,7 @@ export const Footer = () => {
 				<OrganizerList />
 				<ContactList />
 			</section>
-			<div className="text-[#9da3af]">© Hack-a-thon 2024, All Rights Reserved</div>
+			<div className="text-[#9da3af]">© Property of Technology Department of FinTech Club</div>
 		</footer>
 	);
 };
@@ -38,19 +38,19 @@ const SocialMediaList = () => {
 			{/*---------------------------- icon link section ---------------------*/}
 			<div className="flex gap-[20px]">
 				<a
-					href=""
+					href="https://www.facebook.com/rmit.hackaventure.2024" target="_blank"
 					className="w-[40px] h-[40px] bg-white rounded-full flex items-center justify-center"
 				>
 					<TiSocialFacebook className="w-full h-full text-black" />
 				</a>
 				<a
-					href=""
+					href="https://www.instagram.com/rmitfintechclub/" target="_blank"
 					className="w-[40px] h-[40px] bg-white rounded-full flex items-center justify-center"
 				>
 					<IoLogoInstagram className="w-[80%] h-[80%] text-black" />
 				</a>
 				<a
-					href=""
+					href="https://www.linkedin.com/company/rmit-vietnam-fintech-club/mycompany/" target="_blank"
 					className="w-[40px] h-[40px] bg-white rounded-full flex items-center justify-center"
 				>
 					<FaLinkedinIn className="w-[50%] h-[50%] text-black" />
@@ -88,14 +88,14 @@ const OrganizerList = () => {
 					<h2 className="text-[18px] text-white">RMIT Vietnam Fintech Club</h2>
 				</div>
 
-				<div className="flex gap-[15px] items-center">
+				{/* <div className="flex gap-[15px] items-center">
 					<img
 						className="w-[60px] h-[60px]"
 						src="/alignVerticalLogo.svg"
 						alt="fintech logo"
 					/>
-					<h2 className="text-[18px] text-white">chainLink</h2>
-				</div>
+					<h2 className="text-[18px] text-white">ChainLink</h2>
+				</div> */}
 			</div>
 		</div>
 	);
@@ -127,7 +127,7 @@ const ContactList = () => {
 							<span className="text-[#9da3af] hidden lg:inline"> - </span>
 							<span className="text-[#9da3af] block lg:inline">Co-project leader</span>
 						</div>
-						<p className="text-white">03535343434</p>
+						<p className="text-white">0906893581</p>
 					</div>
 				</div>
 				<div className="flex gap-[15px] items-start lg:items-center">
@@ -138,12 +138,12 @@ const ContactList = () => {
 							<span className="text-[#9da3af] hidden lg:inline"> - </span>
 							<span className="text-[#9da3af] block lg:inline">Co-project leader</span>
 						</div>
-						<p className="text-white">03535343434</p>
+						<p className="text-white">0908071012</p>
 					</div>
 				</div>
 				<div className="flex gap-[15px] items-center">
 					<MdEmail className="text-[24px]" />
-					<p className="text-[16px] text-white">rmitfintech123@gmail.com</p>
+					<p className="text-[16px] text-white">rmithackaventure0108@gmail.com</p>
 				</div>
 			</div>
 		</div>

@@ -26,7 +26,7 @@ const JudgeItem = (props: JudgeInfo) => {
 export const JudgeSection = () => {
 	const settings = {
 		dots: true,
-		arrows: false,
+		arrows: true,
 		infinite: true,
 		speed: 500,
 		slidesToShow: 3,

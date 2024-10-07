@@ -114,6 +114,8 @@ export function PartnerList() {
           </div>
         </div>
 
+        {/*----------------------------Academic Sponsors----------------------------*/}
+
         <div className="px-4">
           <h3 className="text-white font-semibold text-[20px] sm:text-[25px] lg:text-[30px] mb-6">
             Academic Sponsors
@@ -123,7 +125,7 @@ export function PartnerList() {
               className={`flex items-centerjustify-center bg-white w-[100px] h-[100px] sm:w-[220px] sm:h-[140px] md:w-[150px] md:h-[150px] rounded-lg`}
             >
               <Image
-                src="/logo.png"
+                src="/partners/aptech.webp"
                 alt="academic-sponsor"
                 width={230}
                 height={230}
@@ -134,10 +136,10 @@ export function PartnerList() {
               className={`flex items-center justify-center bg-white w-[100px] h-[100px] sm:w-[220px] sm:h-[140px] md:w-[150px] md:h-[150px] rounded-lg`}
             >
               <Image
-                src="/cropped-bigo_5000x5000-300x300.png"
+                src="/partners/unitrain.png"
                 alt="academic-sponsor"
-                width={100}
-                height={100}
+                width={200}
+                height={200}
                 className={imageStyle}
               />
             </div>
@@ -145,10 +147,10 @@ export function PartnerList() {
               className={`flex items-center justify-center bg-white w-[100px] h-[100px] sm:w-[220px] sm:h-[140px] md:w-[150px] md:h-[150px] rounded-lg`}
             >
               <Image
-                src="/1581359408041-1581323365860-Logo Blue.png"
+                src="/partners/bigo.png"
                 alt="academic-sponsor"
-                width={200}
-                height={200}
+                width={100}
+                height={100}
                 className={imageStyle}
               />
             </div>
@@ -175,10 +177,6 @@ export function PartnerList() {
             </div>
           </div>
         </div>
-
-
-
-        {/*----------------------------Academic Sponsors----------------------------*/}
 
       </Slider>
     </div>

@@ -1,7 +1,7 @@
 'use client'
-import { Box, Center, Flex, HStack, Text, VStack } from "@chakra-ui/react";
-import { motion, useAnimationControls } from "framer-motion";
-import { memo, useEffect, useMemo, useState } from "react";
+import { Box, Center, Flex, FlexProps, HStack, MergeWithAs, Text } from "@chakra-ui/react";
+import { motion, MotionProps, useAnimationControls } from "framer-motion";
+import { DetailedHTMLProps, ForwardRefExoticComponent, HTMLAttributes, memo, useEffect, useMemo, useState } from "react";
 import ReactCountdown from "react-countdown";
 import type { CountdownProps, CountdownRendererFn } from "react-countdown";
 
@@ -67,7 +67,11 @@ const StaticCard = ({
     );
 };
 
-const MotionFlex = motion(Flex);
+export const MotionFlex = motion.create(
+    Flex as ForwardRefExoticComponent<
+      MergeWithAs<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>, any, FlexProps>
+    >
+  );
 
 const UpperAnimatedCard = memo(
     ({

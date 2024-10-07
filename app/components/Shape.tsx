@@ -4,7 +4,7 @@ import { useRef, useLayoutEffect } from "react";
 import { useSpring, useTransform } from "framer-motion";
 import { Canvas, useThree } from "@react-three/fiber";
 
-export default function Shapes({ isHover, isPress, mouseX, mouseY }) {
+export default function Shapes({ isHover, isPress, mouseX, mouseY }: { isHover: any, isPress: any, mouseX: any, mouseY: any }) {
     const lightRotateX = useSmoothTransform(mouseY, spring, mouseToLightRotation);
     const lightRotateY = useSmoothTransform(mouseX, spring, mouseToLightRotation);
 
@@ -118,11 +118,11 @@ export function Icosahedron() {
 }
 
 export function Material() {
-    return <meshPhongMaterial color="#fff" specular="#61dafb" shininess={10} />;
+    return <meshPhongMaterial args={[{ color: "#fff", specular: "#61dafb", shininess: 10 }]} />
 }
 
 // Adapted from https://github.com/pmndrs/drei/blob/master/src/core/PerspectiveCamera.tsx
-function Camera({ mouseX, mouseY, ...props }) {
+function Camera({ mouseX, mouseY}: { mouseX: any, mouseY: any}) {
     const cameraX = useSmoothTransform(mouseX, spring, (x) => x / 350);
     const cameraY = useSmoothTransform(mouseY, spring, (y) => (-1 * y) / 350);
 
@@ -135,10 +135,11 @@ function Camera({ mouseX, mouseY, ...props }) {
     useLayoutEffect(() => {
         const { current: cam } = cameraRef;
         if (cam) {
-            cam.aspect = size.width / size.height;
-            cam.updateProjectionMatrix();
+            const camera: any = cam;
+            camera.aspect = size.width / size.height;
+            camera.updateProjectionMatrix();
         }
-    }, [size, props]);
+    }, [size]);
 
     useLayoutEffect(() => {
         if (cameraRef.current) {

@@ -70,7 +70,7 @@ const LaptopNav = () => {
 			{/*-----------------------------right side ------------------------*/}
 			<div className="h-full w-[320px] flex justify-between items-center">
 				<a href="https://docs.google.com/document/d/1FGA7Ds3eAuEGMV6rF1yvot5bwMmflQaoPDTHylie4JA/edit" target="_blank" className="no-underline font-semibold  text-[#C93FDD]">
-					See Handbook 
+					See Handbook
 				</a>
 				<a href="mailto:rmithackaventure0108@gmail.com" className="no-underline font-semibold  text-[#C93FDD]">Contact Us</a>
 				<button className="px-[15px] py-[5px] rounded-2xl bg-[#B25FD6] hover:bg-[#63247e] text-white">

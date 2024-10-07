@@ -5,7 +5,7 @@ import { useInView } from "react-intersection-observer";
 
 export const WorkshopTimeline = () => {
 	return (
-		<section className="w-full flex flex-col items-center max-md:px-[16px] max-md:mt-[40px]">
+		<section className="w-full flex flex-col items-center max-md:px-[16px] max-md:mt-[40px] overflow-x:hidden">
 			<div className="drop-shadow-container">
 				<h1
 					className={`max-md:text-4xl md:text-6xl text-center text-white font-semibold md:px-[40px] drop-shadow-text`}
@@ -199,7 +199,7 @@ const DetailTimeLine: React.FC<{
 						initial="hidden"
 						animate={controls}
 						variants={rightSideOfTextSection ? leftSlideVariants : rightSlideVariants}
-						transition={{ duration: 1.3, delay: 0.5 }}
+						transition={{ duration: 1, delay: 0.25 * numberOfOrder }}
 					>
 						<div
 							className={`absolute ${rightSideOfTextSection ? "-right-[85px]" : "-left-[85px]"

@@ -99,7 +99,7 @@ export const PrizeSection = () => {
 				animate={controls}
 				initial="hidden"
 				variants={variants}
-				transition={{ duration: 1.3, delay: 2.0 }}
+				transition={{ duration: 1.3, delay: 1.5 }}
 			>
 				<Image src="/Rectangle.png" alt="light" className="light-effect" width={726.1} height={68.34} />
 			</motion.div>
@@ -108,7 +108,7 @@ export const PrizeSection = () => {
 				animate={controls}
 				initial="hidden"
 				variants={variants}
-				transition={{ duration: 1.3, delay: 2.3 }}
+				transition={{ duration: 1.3, delay: 1.8 }}
 				className='w-full md:px-[10vw]'
 			>
 				<h1 className="mt-[100px] max-md:text-4xl md:text-6xl text-center text-white font-semibold md:px-[40px] max-md:mt-[60px] drop-shadow-text">Special Category Awards</h1>

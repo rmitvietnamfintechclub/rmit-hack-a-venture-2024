@@ -29,7 +29,7 @@ export const JudgeSection = () => {
 		arrows: false,
 		infinite: true,
 		speed: 500,
-		slidesToShow: 3,
+		slidesToShow: 5,
 		initialSlide: 0,
 		slidesToScroll: 1,
 		responsive: [
@@ -130,7 +130,7 @@ export const JudgeSection = () => {
 				style={{
 					background: "linear-gradient(0deg, #000000 0%, #111827 42%, #000000 100%)"
 				}}
-				className="mt-[20px]"
+				className="mt-[60px]"
 			>
 				<h1 className="max-md:text-4xl md:text-6xl text-center text-white font-semibold md:px-[40px] max-md:mb-[20px] drop-shadow-text">Hack-A-Venture <span className="text-[#C93FDD]">Judges</span></h1>
 				<div className="slider-container mx-auto w-[80vw] md:mt-[40px]">

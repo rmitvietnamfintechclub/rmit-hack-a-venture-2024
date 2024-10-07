@@ -12,7 +12,7 @@ import { useEffect } from "react";
 export const AboutClub = () => {
 	const { ref, inView } = useInView({
 		triggerOnce: true,
-		threshold: 0.1
+		threshold: 0.4
 	});
 
 	const controls = useAnimation();
@@ -120,9 +120,9 @@ export const AboutClub = () => {
 				</div>
 
 			</div >
-			<div className="grid grid-cols-3 md:px-[10vw] md:mt-[60px] max-md:mt-[30px] justify-items-center items-center font-sans max-md:px-[16px]">
+			<div ref={ref} className="grid grid-cols-3 md:px-[10vw] md:mt-[60px] max-md:mt-[30px] justify-items-center items-center font-sans max-md:px-[16px]">
 				<div className="flex flex-col items-center max-md:px-[16px] max-md:justify-around max-md:h-full">
-					<span ref={ref} className="text-[#C93FDD] md:text-4xl text-2xl font-semibold font-sans">
+					<span className="text-[#C93FDD] md:text-4xl text-2xl font-semibold font-sans">
 						<CountUp start={0} end={inView ? 80 : 0} duration={5}>
 							{({ countUpRef }) => (
 								<span ref={countUpRef} />
@@ -273,7 +273,6 @@ export const AboutClub = () => {
 				</div>
 				{/* Image Section */}
 				<motion.div
-					ref={ref}
 					initial="hidden"
 					animate={controls}
 					variants={titleVariants}

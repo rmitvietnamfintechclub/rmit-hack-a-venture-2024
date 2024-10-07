@@ -41,7 +41,7 @@ export const HeroSection = () => {
 								}}
 							>
 
-								<div className='text-gradient text-white text-6xl font-bold drop-shadow-text'>
+								<div className='text-white text-6xl font-bold drop-shadow-text'>
 									<FlipText>Hack-A-Venture</FlipText>
 								</div>
 							</motion.h1>

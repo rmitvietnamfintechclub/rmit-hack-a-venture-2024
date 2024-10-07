@@ -8,7 +8,7 @@ import "../css/PartnerSection.css";
 
 export const PartnerSection = () => {
 	return (
-		<div className="bg-black text-center mb-5 md:my-[100px]" id="hackaventure-sponsors">
+		<div className="bg-black text-center mb-5 md:mt-[100px]" id="hackaventure-sponsors">
 			<h1
 				className={`text-[45px] lg:text-[57px] text-center text-white font-semibold md:px-[40px] max-md:mt-[20px] drop-shadow-text`}
 			>
@@ -48,32 +48,13 @@ export function PartnerList() {
 	return (
 		<div className="slider-container bg-black lg:w-[90vw] p-10 sm:p-0 mx-auto">
 			<Slider {...settings}>
-				{/*----------------------------Strategic Sponsors----------------------------*/}
-				<div>
-					<h3 className="text-white font-semibold text-[20px] sm:text-[25px] lg:text-[30px] mb-6">
-						Strategic Sponsors
-					</h3>
-					<div className="flex flex-row md:flex-nowrap gap-4 sm:gap-5 items-center justify-center">
-						<div
-							className={`flex items-centerjustify-center w-[200px] h-[100px] sm:w-[220px] sm:h-[140px] md:w-[250px] md:h-[150px]`}
-						>
-							<Image
-								src="/partners/chainlink.png"
-								alt="strategic-sponsor"
-								width={100}
-								height={100}
-								layout="responsive"
-								className={imageStyle}
-							/>
-						</div>
-					</div>
-				</div>
-
 				{/*----------------------------Diamond Sponsors----------------------------*/}
-				<div className="px-4">
-					<h3 className="text-white font-semibold text-[20px] sm:text-[25px] lg:text-[30px] mb-6">
-						Diamond Sponsors
-					</h3>
+				<div className="md:p-10">
+					<div className="drop-shadow-container">
+						<h3 className="text-white font-semibold text-[20px] sm:text-[25px] lg:text-[30px] mb-6 text-gradient drop-shadow-text text-gradient">
+							Diamond Sponsors
+						</h3>
+					</div>
 					<div className="flex flex-row gap-4 sm:gap-10 items-center justify-center">
 						<div
 							className={`flex items-centerjustify-center w-[200px] h-[100px] sm:w-[220px] sm:h-[140px] md:w-[250px] md:h-[150px]`}
@@ -113,10 +94,32 @@ export function PartnerList() {
 						</div>
 					</div>
 				</div>
+				{/*----------------------------Strategic Sponsors----------------------------*/}
+				<div className="md:p-10">
+					<div className="drop-shadow-container">
+						<h3 className="text-white font-semibold text-[20px] sm:text-[25px] lg:text-[30px] mb-6 drop-shadow-text text-gradient">
+							Strategic Sponsors
+						</h3>
+					</div>
+					<div className="flex flex-row md:flex-nowrap gap-4 sm:gap-5 items-center justify-center">
+						<div
+							className={`flex items-centerjustify-center w-[200px] h-[100px] sm:w-[220px] sm:h-[140px] md:w-[250px] md:h-[150px]`}
+						>
+							<Image
+								src="/partners/chainlink.png"
+								alt="strategic-sponsor"
+								width={100}
+								height={100}
+								layout="responsive"
+								className={imageStyle}
+							/>
+						</div>
+					</div>
+				</div>
 
 				{/*----------------------------Academic Sponsors----------------------------*/}
 
-				<div className="px-4">
+				<div className="md:p-10">
 					<h3 className="text-white font-semibold text-[20px] sm:text-[25px] lg:text-[30px] mb-6">
 						Academic Sponsors
 					</h3>
@@ -158,7 +161,7 @@ export function PartnerList() {
 				</div>
 
 				{/*----------------------------Silver Sponsors----------------------------*/}
-				<div>
+				<div className="md:p-10">
 					<h3 className="text-white font-semibold text-[20px] sm:text-[25px] lg:text-[30px] mb-6">
 						Silver Sponsors
 					</h3>

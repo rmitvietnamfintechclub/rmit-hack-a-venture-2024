@@ -1,5 +1,6 @@
 import { AboutClub } from "./components/AboutClub";
 import { AboutUsSection } from "./components/AboutUsSection";
+import { PartnerSection } from "./components/PartnerSection";
 import { Countdown } from "./components/CountDown";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/header";
@@ -18,6 +19,7 @@ export default function Home() {
 			<HeroSection />
 			<AboutUsSection />
 			<Countdown date={new Date(2024, 10, 3)} />
+			<PartnerSection />
 			<AboutClub />
 			<WhoSection />
 			<ThemeSection />

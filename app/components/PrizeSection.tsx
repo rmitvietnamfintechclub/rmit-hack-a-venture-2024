@@ -7,7 +7,7 @@ import { useInView } from 'react-intersection-observer';
 export const PrizeSection = () => {
 	const { ref, inView } = useInView({
 		triggerOnce: true,
-		threshold: 0.4
+		threshold: 0.2
 	});
 
 	const controls = useAnimation();
@@ -21,6 +21,14 @@ export const PrizeSection = () => {
 	const variants = {
 		hidden: { opacity: 0, y: 20 },
 		visible: { opacity: 1, y: 0 }
+	}
+
+	const imgVariants = {
+		hidden: { opacity: 0 },
+		visible: {
+			opacity: 1,
+			transition: { duration: 0.5, ease: "easeInOut" }
+		}
 	}
 
 	return (
@@ -87,51 +95,45 @@ export const PrizeSection = () => {
 					</motion.div>
 				</div>
 			</div>
+			<motion.div
+				animate={controls}
+				initial="hidden"
+				variants={variants}
+				transition={{ duration: 1.3, delay: 0.8 }}
+			>
+				<Image src="/Rectangle.png" alt="light" className="light-effect" width={726.1} height={68.34} />
+			</motion.div>
 
-			<Image src="/Rectangle.png" alt="light" className="light-effect" width={726.1} height={68.34} />
-
-			<h1 className="max-md:text-3xl text-6xl font-bold md:mt-[120px] max-md:mt-[48px] text-center">Special Category Awards</h1>
-			<div className='md:flex md:flex-wrap md:gap-48 text-[#FBF6FD] max-md:grid max-md:grid-cols-2 md:mx-auto justify-center items-center max-md:gap-[12px] md:mt-[80px] max-md:w-full max-md:mt-[24px]'>
-				<motion.div
-					animate={controls}
-					initial="hidden"
-					variants={variants}
-					transition={{ duration: 1.3, delay: 1.4 }}
-				>
+			<motion.div
+				animate={controls}
+				initial="hidden"
+				variants={variants}
+				transition={{ duration: 1.3, delay: 1.4 }}
+			>
+				<h1 className="max-md:text-3xl text-6xl font-bold md:mt-[120px] max-md:mt-[48px] text-center">Special Category Awards</h1>
+				<div className='md:flex md:flex-wrap md:gap-48 text-[#FBF6FD] max-md:grid max-md:grid-cols-2 md:mx-auto justify-center items-center max-md:gap-[12px] md:mt-[80px] max-md:w-full max-md:mt-[24px]'>
 					<div className="max-md:py-[16px] text-center md:col-span-1 max-md:col-span-2">
 						<Image src="/award1.png" alt="2nd Prize" className="md:w-[200px] h-[309px] max-md:scale-75 rounded-xl mb-4 object-cover mx-auto items-start" width={200} height={200} />
 						<div className='drop-shadow-container'>
 							<h3 className="md:text-3xl max-md:text-2xl font-semibold mb-2 drop-shadow-text">Best Use of Technology</h3>
 						</div>
 					</div>
-				</motion.div>
-				<motion.div
-					animate={controls}
-					initial="hidden"
-					variants={variants}
-					transition={{ duration: 1.3, delay: 1.4 }}
-				>
+
 					<div className="max-md:py-[16px] text-center md:col-span-1">
-						<Image src="/award2.png" alt="2nd Prize" className="md:w-[200px] h-[309px]  max-md:scale-75 rounded-xl mb-4 object-cover mx-auto items-start" width={200} height={200} />
+						<Image src="/award2.png" alt="2nd Prize" className="md:w-[200px] h-[309px] max-md:scale-75 rounded-xl mb-4 object-cover mx-auto items-start" width={200} height={200} />
 						<div className='drop-shadow-container'>
 							<h3 className="md:text-3xl max-md:text-2xl font-semibold mb-2 drop-shadow-text">Best Business Viability</h3>
 						</div>
 					</div>
-				</motion.div>
-				<motion.div
-					animate={controls}
-					initial="hidden"
-					variants={variants}
-					transition={{ duration: 1.3, delay: 1.4 }}
-				>
+
 					<div className="max-md:py-[16px] text-center md:col-span-1">
-						<Image src="/award3.png" alt="2nd Prize" className="md:w-[200px] h-[309px] max-md:scale-75 rounded-xl mb-4 object-cover mx-auto items-start" width={200} height={200} />
+						<Image src="/award3.png" alt="2nd Prize" className="md:w-[200px] h-[309px] max-md:scale-75 rounded-xl mb-4 object-cover mx-auto items-start " width={200} height={200} />
 						<div className='drop-shadow-container'>
 							<h3 className="md:text-3xl max-md:text-2xl font-semibold mb-2 drop-shadow-text">Most Voting Innovation</h3>
 						</div>
 					</div>
-				</motion.div>
-			</div>
+				</div>
+			</motion.div>
 		</div>
 	)
 }

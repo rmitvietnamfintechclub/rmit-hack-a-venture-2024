@@ -17,7 +17,7 @@ const JudgeItem = (props: JudgeInfo) => {
 	return (
 		<div className="flex flex-col md:w-[20vw] min-w-[180px] max-md:py-[16px] max-md:w-full text-center">
 			<Image src={`/judges/${image_path}`} alt={name} className="w-full h-auto rounded-xl mb-4 object-cover" width={200} height={200} />
-			<h3 className="md:text-2xl max-md:text-xl font-semibold mb-2">{name}</h3>
+			<h3 className="md:text-2xl max-md:text-xl font-semibold mb-2 text-white">{name}</h3>
 			<p className="md:text-base max-md:text-md text-[#9CA3AF]">{title}</p>
 		</div>
 	)

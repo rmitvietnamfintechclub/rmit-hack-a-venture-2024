@@ -37,7 +37,7 @@ export const WhoSection = () => {
 			className='md:px-[10vw] md:mt-[100px] max-md:mt-[56px]'
 			ref={ref}
 		>
-			<div className='text-center max-md:px-[33px] font-sans font-semibold md:text-[57px] max-md:text-[40px] max-md:leading-[50px]'>
+			<div className='text-center text-white max-md:px-[33px] font-sans font-semibold md:text-[57px] max-md:text-[40px] max-md:leading-[50px]'>
 				<motion.div
 					initial='hidden'
 					animate={controls}
@@ -73,7 +73,7 @@ export const WhoSection = () => {
 									width={4000}
 									height={4000}
 								/>
-								<div className='text-center font-sans font-semibold md:text-xl max-md:text-lg md:mt-[24px] max-md:mt-[16px]'>
+								<div className='text-center text-white font-sans font-semibold md:text-xl max-md:text-lg md:mt-[24px] max-md:mt-[16px]'>
 									<p dangerouslySetInnerHTML={{ __html: whoSection[index] }}></p>
 								</div>
 							</motion.div>

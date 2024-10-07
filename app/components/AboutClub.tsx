@@ -195,8 +195,8 @@ export const AboutClub = () => {
 				>
 					<h1 className="max-md:hidden md:text-6xl text-3xl font-bold font-sans text-center md:mb-[48px] bg-gradient-to-r from-white via-white to-transparent text-clip"
 						style={{
-							backgroundSize: '85%',
-							backgroundPosition: 'right 400px top 0px'
+							backgroundSize: '70%',
+							backgroundPosition: 'right 200px top 0px'
 						}}
 					>
 						Our previous activities
@@ -272,42 +272,50 @@ export const AboutClub = () => {
 					</motion.div>
 				</div>
 				{/* Image Section */}
-				<div className="slider-container w-full justify-center items-center md:hidden">
-					<Slider {...activitiesSettings} className="center  max-md:h-[170px]">
-						<div className="p-3 md:p-3">
-							<Image
-								src="/activities_1.png"
-								alt="About FinTech Club 1"
-								width={4000}
-								height={4000}
-							/>
-						</div>
-						<div className="p-3 md:p-3">
-							<Image
-								src="/activities_2.png"
-								alt="About FinTech Club 1"
-								width={4000}
-								height={4000}
-							/>
-						</div>
-						<div className="p-3 md:p-3">
-							<Image
-								src="/activities_3.png"
-								alt="About FinTech Club 1"
-								width={4000}
-								height={4000}
-							/>
-						</div>
-						<div className="p-3 md:p-3">
-							<Image
-								src="/activities_4.png"
-								alt="About FinTech Club 1"
-								width={4000}
-								height={4000}
-							/>
-						</div>
-					</Slider>
-				</div>
+				<motion.div
+					ref={ref}
+					initial="hidden"
+					animate={controls}
+					variants={titleVariants}
+					transition={{ duration: 1.3 }}
+				>
+					<div className="slider-container w-full justify-center items-center md:hidden">
+						<Slider {...activitiesSettings} className="center  max-md:h-[170px]">
+							<div className="p-3 md:p-3">
+								<Image
+									src="/activities_1.png"
+									alt="About FinTech Club 1"
+									width={4000}
+									height={4000}
+								/>
+							</div>
+							<div className="p-3 md:p-3">
+								<Image
+									src="/activities_2.png"
+									alt="About FinTech Club 1"
+									width={4000}
+									height={4000}
+								/>
+							</div>
+							<div className="p-3 md:p-3">
+								<Image
+									src="/activities_3.png"
+									alt="About FinTech Club 1"
+									width={4000}
+									height={4000}
+								/>
+							</div>
+							<div className="p-3 md:p-3">
+								<Image
+									src="/activities_4.png"
+									alt="About FinTech Club 1"
+									width={4000}
+									height={4000}
+								/>
+							</div>
+						</Slider>
+					</div>
+				</motion.div>
 				<motion.div
 					initial="hidden"
 					animate={controls}

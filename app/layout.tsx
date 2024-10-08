@@ -15,8 +15,8 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<Head>
-				<link rel="icon" sizes="16x16" href="/favicon/favicon.ico" />
 				<title>RMIT Hack-A-Venture 2024</title>
+				<link rel="icon" href="/icon.ico" />
 				<meta name="description" content="This competition aims to bridge the gap between technical expertise and business strategy by having students leverage Artificial Intelligence, Blockchain and Cybersecurity, to create realistic and impactful solutions advancing UN SDGs in Vietnam." />
 				<link rel="preconnect" href="https://fonts.googleapis.com" />
 				<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

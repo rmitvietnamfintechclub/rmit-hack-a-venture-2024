@@ -40,6 +40,9 @@ export const PrizeSection = () => {
 				transition={{ duration: 1.3, delay: 0.2 }}
 			>
 				<span ref={ref} className="max-md:text-4xl md:text-6xl text-center text-white font-semibold md:px-[40px] max-md:mt-[20px] drop-shadow-text">Hack-A-Venture <span className='text-[#C93FDD]'>Prizes</span></span>
+				<p className='md:mt-[24px] text-xl font-sans text-white max-md:mt-[16px]'>
+					Prize components will include <span className='font-bold text-[#C93FDD]'>GotIt Vouchers</span>, <span className='font-bold text-[#C93FDD]'>Course Scholarships</span> and <span className='font-bold text-[#C93FDD]'>Medals</span>
+				</p>
 			</motion.div>
 			<div className='md:flex md:flex-wrap md:gap-48 text-[#FBF6FD] max-md:grid max-md:grid-cols-2 md:mx-auto max-md:px-[60px] justify-center items-center max-md:gap-x-[40px] md:mt-[80px] max-md:w-full max-md:mt-[24px]'>
 				<div className="max-md:py-[16px] text-center md:col-span-1 max-md:hidden">
@@ -112,6 +115,9 @@ export const PrizeSection = () => {
 				className='w-full md:px-[10vw]'
 			>
 				<h1 className="mt-[100px] max-md:text-4xl md:text-6xl text-center text-white font-semibold md:px-[40px] max-md:mt-[60px] drop-shadow-text">Special Category Awards</h1>
+				<p className='md:mt-[24px] text-xl font-sans text-white max-md:mt-[16px]'>
+					Prize components will include <span className='font-bold text-[#C93FDD]'>Course Scholarships</span> and <span className='font-bold text-[#C93FDD]'>Vouchers</span>
+				</p>
 				<div className='md:grid md:grid-cols-3 text-[#FBF6FD] max-md:grid max-md:grid-cols-1 md:mx-auto justify-center items-start max-md:gap-[12px] md:mt-[80px] max-md:w-full max-md:mt-[24px]'>
 					<div className="text-center md:col-span-1 max-md:col-span-2">
 						<Image src="/award1.png" alt="2nd Prize" className="md:w-[200px] h-[309px] max-md:scale-75 rounded-xl mb-4 object-cover mx-auto items-start" width={200} height={200} />

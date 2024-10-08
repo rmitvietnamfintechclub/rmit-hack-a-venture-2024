@@ -5,6 +5,7 @@ export const MentorSection = () => {
     return (
         <div className="text-white flex flex-col items-center justify-center md:mt-[120px] max-md:px-[16px] md:mb-[400px] max-md:my-[68px]">
             <h1 className="max-md:text-4xl md:text-6xl text-center text-white font-semibold md:px-[40px] max-md:mt-[20px] drop-shadow-text">Team Mentors</h1>
+            <h2 className="max-md:text-2xl md:text-3xl text-center text-white font-semibold italic mt-[32px] md:px-[40px] max-md:mb-[20px]">(To be updated)</h2>
             <div className='md:flex md:flex-wrap md:gap-5 text-white max-md:grid max-md:grid-cols-2 mx-auto justify-center items-start max-md:gap-[12px] md:mt-[40px]'>
                 <div className="md:w-[250px] max-md:py-[16px] text-center">
                     <Image src="/mentors/Long_Dang.png" alt="Mr. Long Dang" className="w-full h-auto rounded-xl mb-4 object-cover" width={200} height={200} />

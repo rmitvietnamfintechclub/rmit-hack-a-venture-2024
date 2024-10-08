@@ -177,6 +177,7 @@ export const JudgeSection = () => {
 				className="mt-[60px]"
 			>
 				<h1 className="max-md:text-4xl md:text-6xl text-center text-white font-semibold md:px-[40px] max-md:mb-[20px] drop-shadow-text">Hack-A-Venture <span className="text-[#C93FDD]">Judges</span></h1>
+				<h2 className="max-md:text-2xl md:text-3xl text-center text-white font-semibold italic mt-[32px] md:px-[40px] max-md:mb-[20px]">(To be updated)</h2>
 				<div className="slider-container mx-auto w-[80vw] md:mt-[40px]">
 					<Slider {...settings}>
 						{judges.map((judge, key) => <JudgeItem key={key} name={judge.name} title={judge.title} image_path={judge.image_path} />)}

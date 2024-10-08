@@ -37,7 +37,10 @@ export const SponsoredPrizeSection = () => {
 			className='w-full md:px-[10vw]'
 			ref={ref}
 		>
-			<h1 className="my-[100px] max-md:text-4xl md:text-6xl text-center text-white font-semibold md:px-[40px] max-md:my-[60px] max-md:mb-[20px] drop-shadow-text">Special Category Awards</h1>
+			<h1 className="mt-[100px] max-md:text-4xl md:text-6xl text-center text-white font-semibold md:px-[40px] max-md:my-[60px] max-md:mb-[20px] drop-shadow-text">Special Category Awards</h1>
+			<p className='md:mt-[24px] md:mb-[40px] text-xl text-center font-sans text-white max-md:mt-[16px]'>
+				Prize components will include <span className='font-bold text-[#C93FDD]'>Cash Vouchers</span>
+			</p>
 			<div className='md:grid md:grid-cols-2 text-[#FBF6FD] max-md:grid max-md:grid-cols-1 md:mx-auto justify-center items-start max-md:gap-[12px] md:mt-[10px] max-md:w-full max-md:mt-[24px] content-start'>
 				<div className="text-center md:col-span-1">
 					<Image src="/partners/polkadot.png" alt="Polkadot" className="md:w-[200px] max-md:h-[150px] max-md:scale-75 rounded-xl mb-4 object-contain mx-auto justify-start items-start" width={200} height={200} />

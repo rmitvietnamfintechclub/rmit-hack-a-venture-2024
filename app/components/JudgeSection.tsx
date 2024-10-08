@@ -73,12 +73,14 @@ export const JudgeSection = () => {
 		speed: 500,
 		slidesToShow: 3,
 		initialSlide: 0,
-		slidesToScroll: 1,
+		slidesToScroll: 3,
 		responsive: [
 			{
 				breakpoint: 700,
 				settings: {
+					dots: false,
 					slidesToShow: 1,
+					slidesToScroll: 1,
 					swipeToSlide: true,
 				}
 			}

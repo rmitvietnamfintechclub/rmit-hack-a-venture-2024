@@ -72,6 +72,7 @@ export const WhoSection = () => {
 									alt='who'
 									width={4000}
 									height={4000}
+									className="rounded-lg"
 								/>
 								<div className='text-center text-white font-sans font-semibold md:text-xl max-md:text-lg md:mt-[24px] max-md:mt-[16px]'>
 									<p dangerouslySetInnerHTML={{ __html: whoSection[index] }}></p>

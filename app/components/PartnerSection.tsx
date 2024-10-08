@@ -58,7 +58,7 @@ export function PartnerList() {
 					</div>
 					<div className="flex flex-row gap-4 sm:gap-10 items-center justify-center">
 						<div
-							className={`flex items-centerjustify-center w-[200px] h-[100px] sm:w-[220px] sm:h-[140px] md:w-[250px] md:h-[150px]`}
+							className={`flex items-center justify-center w-[200px] h-[100px] sm:w-[220px] sm:h-[140px] md:w-[250px] md:h-[150px]`}
 						>
 							<Image
 								src="/partners/dragon_capital.png"
@@ -70,7 +70,7 @@ export function PartnerList() {
 							/>
 						</div>
 						<div
-							className={`flex items-centerjustify-center w-[200px] h-[100px] sm:w-[220px] sm:h-[140px] md:w-[250px] md:h-[150px]`}
+							className={`flex items-center justify-center w-[200px] h-[100px] sm:w-[220px] sm:h-[140px] md:w-[250px] md:h-[150px]`}
 						>
 							<Image
 								src="/partners/monad.png"
@@ -82,7 +82,7 @@ export function PartnerList() {
 							/>
 						</div>
 						<div
-							className={`flex items-centerjustify-center w-[200px] h-[100px] sm:w-[220px] sm:h-[140px] md:w-[250px] md:h-[150px]`}
+							className={`flex items-center justify-center w-[200px] h-[100px] sm:w-[220px] sm:h-[140px] md:w-[250px] md:h-[150px]`}
 						>
 							<Image
 								src="/partners/polkadot.png"
@@ -126,7 +126,7 @@ export function PartnerList() {
 					</h3>
 					<div className="flex flex-row md:flex-nowrap gap-4 sm:gap-10 items-center justify-center">
 						<div
-							className={`flex items-centerjustify-center bg-white w-[100px] h-[100px] sm:w-[220px] sm:h-[140px] md:w-[150px] md:h-[150px] rounded-lg`}
+							className={`flex items-center justify-center bg-white w-[100px] h-[100px] sm:w-[220px] sm:h-[140px] md:w-[150px] md:h-[150px] rounded-lg`}
 						>
 							<Image
 								src="/partners/aptech.webp"

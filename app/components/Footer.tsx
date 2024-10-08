@@ -13,7 +13,7 @@ export const Footer = () => {
 				<OrganizerList />
 				<ContactList />
 			</section>
-			<div className="text-[#9da3af]">© Property of Technology Department of FinTech Club</div>
+			<div className="text-[#9da3af]">© Property of Technology Department of FinTech Club 2024</div>
 		</footer>
 	);
 };

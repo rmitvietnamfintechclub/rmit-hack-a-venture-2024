@@ -74,7 +74,7 @@ const LaptopNav = () => {
 					See Handbook
 				</a>
 				<a href="mailto:rmithackaventure0108@gmail.com" className="no-underline font-semibold  text-[#C93FDD]">Contact Us</a>
-				<button className="px-[15px] py-[5px] rounded-2xl bg-[#B25FD6] hover:bg-[#63247e] text-white">
+				<button className="px-[15px] py-[5px] rounded-2xl bg-[#B25FD6] hover:bg-[#CA8CE6] text-white font-semibold">
 					<a href="https://docs.google.com/forms/d/1azQmLTEt04oDg3TwJyTmQ-wbzgxiPLibbaQdSiTHtVU/viewform?edit_requested=true" target="_blank">Join Now</a>
 				</button>
 			</div>
@@ -277,7 +277,7 @@ const Navigation = ({ hamburgerBarIsActive }: { hamburgerBarIsActive: boolean })
 					whileHover={{ scale: 1.1 }}
 					whileTap={{ scale: 0.95 }}
 				>
-					<button className="px-[15px] py-[2px] rounded-2xl bg-[#B25FD6] text-white">
+					<button className="px-[24px] py-[8px] rounded-2xl bg-[#B25FD6] hover:bg-[#CA8CE6] text-white font-semibold">
 						<a href="https://docs.google.com/forms/d/1azQmLTEt04oDg3TwJyTmQ-wbzgxiPLibbaQdSiTHtVU/viewform?edit_requested=true" target="_blank">Join Now</a>
 					</button>
 				</motion.li>

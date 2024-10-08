@@ -15,6 +15,10 @@
 	}
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	color: var(--foreground);
 	background: var(--background);
@@ -44,14 +48,16 @@ body {
 
 .hover\:text-gradient:hover {
 	font-weight: bold;
-	background: linear-gradient(200deg,
-			#DEB7F0 0%,
-			#F5EBFC 17%,
-			#DEB7F0 47%,
-			#CA8CE6 82%,
-			#F5EBFC 100%);
+	background: linear-gradient(
+		200deg,
+		#deb7f0 0%,
+		#f5ebfc 17%,
+		#deb7f0 47%,
+		#ca8ce6 82%,
+		#f5ebfc 100%
+	);
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;	
+	-webkit-text-fill-color: transparent;
 }
 
 .hover\:drop-shadow-container:hover {

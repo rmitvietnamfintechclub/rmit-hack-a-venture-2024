@@ -21,7 +21,7 @@ export const PartnerSection = () => {
 
 export function PartnerList() {
 	const settings = {
-		dots: false,
+		dots: true,
 		arrows: false,
 		infinite: true,
 		speed: 500,
@@ -29,6 +29,7 @@ export function PartnerList() {
 		autoplay: true,
 		autoplaySpeed: 1500,
 		initialSlide: 0,
+		pauseOnHover: true,
 		responsive: [
 			{
 				breakpoint: 700,

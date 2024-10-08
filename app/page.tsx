@@ -12,6 +12,7 @@ import { SponsoredPrizeSection } from "./components/SponsoredPrizeSection";
 import { ThemeSection } from "./components/ThemeSection";
 import { WhoSection } from "./components/WhoSection";
 import { WorkshopTimeline } from "./components/WorkshopTimeline";
+import { BackToTopButton } from "./components/BackToTopButton";
 
 export default function Home() {
 	return (
@@ -29,6 +30,7 @@ export default function Home() {
 			<SponsoredPrizeSection />
 			<JudgeSection />
 			<MentorSection />
+			<BackToTopButton />
 			<Footer />
 		</div>
 	);

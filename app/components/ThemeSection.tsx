@@ -1,8 +1,12 @@
+'use client'
 import Image from 'next/image'
-import React from 'react'
-import '../css/HeroSection.css'
+import React, { useState } from 'react'
+import '../css/ThemeSection.css'
+import { motion } from 'framer-motion'
 
 export const ThemeSection = () => {
+	const [isHovered, setIsHovered] = useState("1");
+
 	return (
 		<div className='md:px-[10vw] md:py-[80px] w-full max-md:px-[16px] max-md:pt-[40px]'>
 			<div className='md:grid md:grid-cols-10 w-full md:pt-[80px]'>
@@ -26,7 +30,9 @@ export const ThemeSection = () => {
 								width={1000}
 								height={1000}
 							/>
-							<div className='text-white text-xl font-semibold font-sans'>Artificial Intelligence (AI)</div>
+							<div className={`drop-shadow-container hover:text-gradient ${isHovered === "1" ? 'drop-shadow-text' : ''}`} onClick={() => setIsHovered("1")}>
+								<div className={`text-white text-xl font-semibold font-sans ${isHovered === "1" ? 'text-gradient' : ''}`}>Artificial Intelligence (AI)</div>
+							</div>
 						</div>
 						<div className='flex flex-row items-center gap-11 my-auto max-md:border-[1px] max-md:border-[#374151] max-md:rounded-lg max-md:p-4'>
 							<Image
@@ -36,7 +42,9 @@ export const ThemeSection = () => {
 								width={1000}
 								height={1000}
 							/>
-							<div className='text-white text-xl font-semibold font-sans'>Blockchain Technology</div>
+							<div className={`drop-shadow-container hover:text-gradient ${isHovered === "2" ? 'drop-shadow-text' : ''}`} onClick={() => setIsHovered("2")}>
+								<div className={`text-white text-xl font-semibold font-sans ${isHovered === "2" ? 'text-gradient' : ''}`}>Blockchain Technology</div>
+							</div>
 						</div>
 						<div className='flex flex-row items-center gap-11 my-auto max-md:border-[1px] max-md:border-[#374151] max-md:rounded-lg max-md:p-4'>
 							<Image
@@ -46,18 +54,86 @@ export const ThemeSection = () => {
 								width={1000}
 								height={1000}
 							/>
-							<div className='text-white text-xl font-semibold font-sans'>Cybersecurity Technology</div>
+							<div className={`drop-shadow-container hover:text-gradient ${isHovered === "3" ? 'drop-shadow-text' : ''}`} onClick={() => setIsHovered("3")}>
+								<div className={`text-white text-xl font-semibold font-sans ${isHovered === "3" ? 'text-gradient' : ''}`}>Cybersecurity Technology</div>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div className='md:col-span-5 object-cover max-md:hidden md:w-[600px] mx-auto'>
-					<Image
-						className='justify-self-end object-cover'
-						src='/theme.webp'
-						alt='theme'
-						width={1000}
-						height={10000}
-					/>
+					{(() => {
+						switch (isHovered) {
+							case "1":
+								return (
+									<motion.div
+										key={"AI"}
+										initial={{ opacity: 0, y: 100 }}
+										animate={{ opacity: 1, y: 0 }}
+										transition={{ duration: 0.5 }}
+									>
+										<Image
+											className='justify-self-end object-cover'
+											src='/AI.png'
+											alt='theme'
+											width={1000}
+											height={10000}
+										/>
+									</motion.div>
+								)
+							case "2":
+								return (
+									<motion.div
+										key={"Blockchain"}
+										initial={{ opacity: 0, y: 100 }}
+										animate={{ opacity: 1, y: 0 }}
+										transition={{ duration: 0.5 }}
+									>
+										<Image
+											className='justify-self-end object-cover'
+											src='/Blockchain.png'
+											alt='theme'
+											width={1000}
+											height={10000}
+										/>
+									</motion.div>
+								)
+							case "3":
+								return (
+									<motion.div
+										key={"Cybersecurity"}
+										initial={{ opacity: 0, y: 100 }}
+										animate={{ opacity: 1, y: 0 }}
+										transition={{ duration: 0.5 }}
+									>
+										<Image
+											className='justify-self-end object-cover'
+											src='/Cybersecurity.png'
+											alt='theme'
+											width={1000}
+											height={10000}
+										/>
+									</motion.div>
+								)
+							default:
+								return (
+									<motion.div
+										key={"AI"}
+										initial={{ opacity: 0, y: 100 }}
+										animate={{ opacity: 1, y: 0 }}
+										transition={{ duration: 0.5 }}
+									>
+
+										return <Image
+											className='justify-self-end object-cover'
+											src='/AI.png'
+											alt='theme'
+											width={1000}
+											height={10000}
+										/>
+									</motion.div>
+								)
+						}
+					})()}
 				</div>
 			</div>
 			<div className='md:mt-[105px] max-md:mt-[32px]'>

@@ -18,7 +18,8 @@
 body {
 	color: var(--foreground);
 	background: var(--background);
-	overflow-x: hidden; /* Enables horizontal scrolling */
+	overflow-x: hidden;
+	/* Enables horizontal scrolling */
 	font-family: "Poppins", sans-serif;
 }
 
@@ -29,15 +30,35 @@ body {
 }
 
 .slick-slide {
-	transition: transform 0.3s ease-in-out; /* Add smooth transition */
+	transition: transform 0.3s ease-in-out;
+	/* Add smooth transition */
 }
 
 .drop-shadow-text {
 	filter: drop-shadow(1px 1px 4.2px #c93fdd);
 }
 
+.hover\:drop-shadow-text:hover {
+	filter: drop-shadow(1px 1px 4.2px #c93fdd);
+}
+
+.hover\:text-gradient:hover {
+	font-weight: bold;
+	background: linear-gradient(200deg,
+			#DEB7F0 0%,
+			#F5EBFC 17%,
+			#DEB7F0 47%,
+			#CA8CE6 82%,
+			#F5EBFC 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;	
+}
+
+.hover\:drop-shadow-container:hover {
+	filter: drop-shadow(0px 4px 40px #b25fd6);
+}
+
 /* this one for the container of the text */
 .drop-shadow-container {
 	filter: drop-shadow(0px 4px 40px #b25fd6);
 }
-

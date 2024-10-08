@@ -98,7 +98,7 @@ export const HeroSection = () => {
 			</div>
 
 			<div className='md:hidden'>
-				<div className='mb-[16px] justify-center mx-auto text-center drop-shadow-container'>
+				<div className='mb-[16px] text-white justify-center mx-auto text-center drop-shadow-container'>
 					<h1 className='text-5xl drop-shadow-lg shadow-lg font-sans font-bold mt-[40px] drop-shadow-text'>
 						RMIT 2024
 					</h1>

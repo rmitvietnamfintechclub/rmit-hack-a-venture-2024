@@ -1,0 +1,11 @@
+.text-gradient {
+    font-weight: bold;
+    background: linear-gradient(200deg,
+            #DEB7F0 0%,
+            #F5EBFC 17%,
+            #DEB7F0 47%,
+            #CA8CE6 82%,
+            #F5EBFC 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
